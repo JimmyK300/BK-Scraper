@@ -1,0 +1,306 @@
+{
+  "course": {
+    "id": 62695,
+    "fullname": "Đại Số Tuyến Tính (MT1007)_HK252_ALL",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=62695"
+  },
+  "sections": [
+    {
+      "id": "244235",
+      "number": "0",
+      "title": "THÔNG TIN MÔN HỌC",
+      "items": [
+        {
+          "id": "640400",
+          "title": "Đề cương môn học MT1007",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=640400",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640401",
+          "title": "Đề thi cuối kỳ Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640401",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640402",
+          "title": "Bài kiểm tra số 1. HK252 Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=640402",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640403",
+          "title": "Bài kiểm tra số 2 - HK252 Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=640403",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640404",
+          "title": "Bài kiểm tra số 3- HK252 Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=640404",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "244231",
+      "number": "1",
+      "title": "Topic 1",
+      "items": [
+        {
+          "id": "640408",
+          "title": "Bài giảng 1. Đại số ma trận Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640408",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640409",
+          "title": "Bài giảng 2. Đại số ma trận tiếp theo Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640409",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640410",
+          "title": "Bài giảng 3. Không gian vécto Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640410",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640411",
+          "title": "Bài giảng 4. Không gian vecto tiếp theo Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640411",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640412",
+          "title": "Bài giảng 5. Không gian Euclide Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640412",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640413",
+          "title": "Bài giảng 6. Ánh xạ tuyến tính Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640413",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640414",
+          "title": "Bài giảng 7. Trị riêng, vecto riêng Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640414",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640415",
+          "title": "Bài giảng 8 (đọc thêm) Dạng toàn phương Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640415",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640416",
+          "title": "Bài giảng 9 (đọc thêm). Dạng toàn phương tiếp theo Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=640416",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "244227",
+      "number": "2",
+      "title": "Topic 2",
+      "items": [
+        {
+          "id": "640417",
+          "title": "Video Bài giảng 1. Đại số ma trận",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640417",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640418",
+          "title": "Video Bài giảng 2. Đại số ma trận tiếp theo",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640418",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640419",
+          "title": "Video Bài giảng 3. Không gian vecto",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640419",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640420",
+          "title": "Video Bài giảng 4. Không gian vecto tiếp theo",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640420",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640421",
+          "title": "Video Ôn thi giữa kỳ môn ĐSTT",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640421",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640422",
+          "title": "Video Bài giảng 5. Không gian Euclide",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640422",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640423",
+          "title": "Video Bài giảng 6. Ánh xạ tuyến tính",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640423",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640424",
+          "title": "Video Bài giảng 6. Ánh xạ tuyến tính (ngắn gọn)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640424",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640425",
+          "title": "Video Bài giảng 7. Trị riêng, vecto riêng",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640425",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640426",
+          "title": "Video Bài giảng 8. Dạng Toàn phương",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640426",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640427",
+          "title": "Video Bài giảng 9. Dạng Toàn phương (tiếp theo)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640427",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640428",
+          "title": "Video Bài giảng. Giải bài tập chương ánh xạ tuyến tính",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640428",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640429",
+          "title": "Video1 Bài giảng Ôn thi cuối kỳ môn ĐSTT",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640429",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640430",
+          "title": "Video 2. Ôn thi cuối kỳ môn ĐSTT",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=640430",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "244223",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    },
+    {
+      "id": "585100",
+      "number": "4",
+      "title": "Topic 5",
+      "items": []
+    },
+    {
+      "id": "585101",
+      "number": "5",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,231 @@
+{
+  "course": {
+    "id": 124045,
+    "fullname": "Introduction to Computing (CO1005)_VÕ QUẾ SƠN (CLC_HK251) [CC02]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=124045"
+  },
+  "sections": [
+    {
+      "id": "524625",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "549500",
+          "title": "Introduction to Computing (CO1005)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=549500",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "600067",
+          "title": "[251]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Introduction to Computing (CO1005)_VÕ QUẾ SƠN (CLC_HK251) [CC02]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=600067",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "524624",
+      "number": "1",
+      "title": "General Information",
+      "items": [
+        {
+          "id": "613912",
+          "title": "Điểm BTL",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=613912",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "607541",
+          "title": "Final Exam - Matrix of Questions",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=607541",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "607503",
+          "title": "Blended learning (11/12)",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=397599",
+          "url_kind": "direct",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "605126",
+          "title": "Midterm Exam score (HK251)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=605126",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "588406",
+          "title": "Ma trận đề thi giữa kỳ HK251",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=588406",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "579529",
+          "title": "HK251 Schedule",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=579529",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "554094",
+          "title": "Course materials: slide",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=554094",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "565036",
+          "title": "Slides from previous courses",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=565036",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "554095",
+          "title": "Course syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=554095",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "565035",
+          "title": "Slides from Prof. Ida for the first day",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=565035",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "573487",
+          "title": "Prof. Ida's documents",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=573487",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571587",
+          "title": "Prof. Ida- Day 1-3- Documents",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571587",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "524623",
+      "number": "2",
+      "title": "Quiz",
+      "items": [
+        {
+          "id": "602619",
+          "title": "HW 7 - Array and Functions",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=602619",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597504",
+          "title": "Quiz 6 (13/11): Blended Learning 1",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=597504",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597486",
+          "title": "Quiz 5 (9/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=597486",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "594931",
+          "title": "HW 4 (4/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=594931",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "592027",
+          "title": "HW 3 (4/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=592027",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "589169",
+          "title": "HW 2 (9/10, deadline 17/10)",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=589169",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "586780",
+          "title": "HW 1 (deadline 9/10)",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=586780",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "524622",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

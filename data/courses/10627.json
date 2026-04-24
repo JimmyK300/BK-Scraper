@@ -1,0 +1,227 @@
+{
+  "course": {
+    "id": 10627,
+    "fullname": "Linear Algebra (MT1007)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=10627"
+  },
+  "sections": [
+    {
+      "id": "25763",
+      "number": "0",
+      "title": "Course syllabus",
+      "items": [
+        {
+          "id": "53847",
+          "title": "Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=53847",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "89391",
+          "title": "Midterm and Final examinations",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=89391",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "541279",
+          "title": "Final exam 242",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=541279",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "25759",
+      "number": "1",
+      "title": "Complex numbers",
+      "items": [
+        {
+          "id": "95699",
+          "title": "Complex numbers",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95699",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95707",
+          "title": "Polar form of complex numbers",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95707",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95711",
+          "title": "Exponential form of complex numbers",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95711",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "625136",
+          "title": "chapter 1 Complex numbers",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=625136",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "173747",
+      "number": "2",
+      "title": "Applications of Linear Algebra",
+      "items": [
+        {
+          "id": "101663",
+          "title": "Leslie matrix",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=101663",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "101699",
+          "title": "Markov chains",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=101699",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "101635",
+          "title": "Leotief input output models",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=101635",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "101639",
+          "title": "Cryptography",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=101639",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "25755",
+      "number": "3",
+      "title": "Matrices",
+      "items": [
+        {
+          "id": "95731",
+          "title": "Introduction to Matrices",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95731",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95739",
+          "title": "Elementary row operations",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95739",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95743",
+          "title": "Operations on Matrices",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95743",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95779",
+          "title": "Matrix Multiplication",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95779",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95759",
+          "title": "Modelling motion with matrices",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95759",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "95775",
+          "title": "Inverse of a matrix",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=95775",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "25751",
+      "number": "4",
+      "title": "Determinant",
+      "items": []
+    },
+    {
+      "id": "551324",
+      "number": "5",
+      "title": "Inner product space",
+      "items": [
+        {
+          "id": "597066",
+          "title": "Inner product spaces",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=597066",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597067",
+          "title": "Length of a vector",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=597067",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

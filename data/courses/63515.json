@@ -1,0 +1,304 @@
+{
+  "course": {
+    "id": 63515,
+    "fullname": "SINH HOẠT SINH VIÊN ĐẦU KHÓA NĂM HỌC 2025 – 2026",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=63515"
+  },
+  "sections": [
+    {
+      "id": "247515",
+      "number": "0",
+      "title": "Lưu ý SV K2025 tham gia nội dung chuyên đề học phần trực tuyến qua trang BK E-learning",
+      "items": []
+    },
+    {
+      "id": "537698",
+      "number": "1",
+      "title": "Khảo sát tân sinh viên",
+      "items": [
+        {
+          "id": "568808",
+          "title": "Khảo sát tân sinh viên K2025",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=568808",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "247511",
+      "number": "2",
+      "title": "Bài giảng của Phòng Công tác sinh viên",
+      "items": [
+        {
+          "id": "568807",
+          "title": "Bài giảng Nội quy học đường",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=568807",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568811",
+          "title": "Bài kiểm tra Nội quy học đường Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=568811",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568810",
+          "title": "Bài giảng chế độ chính sách, hỗ trợ tài chính cho SV_Phần 1",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=568811",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568816",
+          "title": "Bài giảng Chế độ chính sách, hỗ trợ tài chính cho SV_Phần 2",
+          "url": "#module-568816",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568820",
+          "title": "Bài kiểm tra Chế độ chính sách, hỗ trợ tài chính cho SV Trắc nghiệm",
+          "url": "#module-568820",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568821",
+          "title": "Bài giảng Sinh hoạt công dân cho SV",
+          "url": "#module-568821",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568822",
+          "title": "Bài kiểm tra Sinh hoạt công dân cho SV Trắc nghiệm",
+          "url": "#module-568822",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568823",
+          "title": "Bài giảng Điểm rèn luyện, hoạt động ngoại khóa cho SV",
+          "url": "#module-568823",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568826",
+          "title": "Bài kiểm tra Điểm rèn luyện, hoạt động ngoại khóa cho SV Trắc nghiệm",
+          "url": "#module-568826",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568827",
+          "title": "Bài giảng Học bổng cho SV",
+          "url": "#module-568827",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568829",
+          "title": "Bài giảng Vinh danh, khen thưởng SV đạt thành tích trong các cuộc thi học thuật, nghiên cứu khoa học và đổi mới sáng tạo",
+          "url": "#module-568829",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568830",
+          "title": "Bài kiểm tra Học bổng cho SV, Vinh danh, khen thưởng SV đạt thành tích trong các cuộc thi học thuật, nghiên cứu khoa học và đổi mới sáng tạo Trắc nghiệm",
+          "url": "#module-568830",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568831",
+          "title": "Bài giảng Các chương trình, hoạt động hỗ trợ cho SV",
+          "url": "#module-568831",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568833",
+          "title": "Bài kiểm tra Các chương trình, hoạt động hỗ trợ cho SV Trắc nghiệm",
+          "url": "#module-568833",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "247507",
+      "number": "3",
+      "title": "Bài giảng của Phòng Hành chính - Trạm Y tế",
+      "items": [
+        {
+          "id": "568834",
+          "title": "Bài giảng Công tác y tế cho SV",
+          "url": "#module-568834",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568835",
+          "title": "Bài kiểm tra Công tác y tế cho SV Trắc nghiệm",
+          "url": "#module-568835",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "247503",
+      "number": "4",
+      "title": "Bài giảng của Thư viện",
+      "items": [
+        {
+          "id": "568836",
+          "title": "Bài giảng Giới thiệu hoạt động của Thư viện",
+          "url": "#module-568836",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568858",
+          "title": "Bài kiểm tra Giới thiệu hoạt động của Thư viện Trắc nghiệm",
+          "url": "#module-568858",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "537695",
+      "number": "5",
+      "title": "Bài giảng của VP. Đoàn Thanh niên - Hội Sinh viên",
+      "items": [
+        {
+          "id": "568837",
+          "title": "Bài giảng Giới thiệu hoạt động VP. Đoàn Thanh niên - Hội Sinh viên Trường",
+          "url": "#module-568837",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568859",
+          "title": "Bài giảng Phương pháp học tập tại Đại học",
+          "url": "#module-568859",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568860",
+          "title": "Bài kiểm tra Giới thiệu hoạt động VP. Đoàn Thanh niên - Hội Sinh viên Trường Trắc nghiệm",
+          "url": "#module-568860",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "537697",
+      "number": "6",
+      "title": "Bài giảng của Trung tâm Ngoại ngữ",
+      "items": [
+        {
+          "id": "568861",
+          "title": "Bài giảng Quy định tiếng Anh cho SV",
+          "url": "#module-568861",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568862",
+          "title": "Bài kiểm tra Quy định tiếng Anh cho SV Trắc nghiệm",
+          "url": "#module-568862",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "537696",
+      "number": "7",
+      "title": "Bài giảng của Phòng Đào tạo",
+      "items": [
+        {
+          "id": "568863",
+          "title": "Bài giảng Quy chế và lịch trình học vụ cho SV",
+          "url": "#module-568863",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568864",
+          "title": "Bài kiểm tra Quy chế và lịch trình học vụ cho SV Trắc nghiệm",
+          "url": "#module-568864",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,337 @@
+{
+  "course": {
+    "id": 29279,
+    "fullname": "Thông tin Công tác Sinh viên (Info. Student Affairs)",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=29279"
+  },
+  "sections": [
+    {
+      "id": "98395",
+      "number": "0",
+      "title": "Chung",
+      "items": [
+        {
+          "id": "426615",
+          "title": "Mẫu biên bản họp lớp",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=426615",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "592574",
+          "title": "Sổ tay GVCN",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=592574",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "592576",
+          "title": "Các biểu mẫu công tác GVCN Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=592576",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "98399",
+      "number": "1",
+      "title": "ĐIỂM TIN SINH VIÊN HK242 NĂM HỌC 2024-2025",
+      "items": [
+        {
+          "id": "127647",
+          "title": "Điểm tin SV tuần 02 (06.01)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=127647",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "510000",
+          "title": "Điểm tin SV tuần 07 (14.02)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=510000",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "512302",
+          "title": "Điểm tin SV tuần 07 (21.02)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=512302",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "517268",
+          "title": "Điểm tin SV tuần 10 (07.03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=517268",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "520289",
+          "title": "Điểm tin SV tuần 11 (14.03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=520289",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "525210",
+          "title": "Điểm tin SV tuần 13 (28.03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=525210",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "529972",
+          "title": "Điểm tin SV tuần 15 (11.04)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=529972",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "532832",
+          "title": "Điểm tin SV tuần 19 (9.5)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=532832",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "540925",
+          "title": "Điểm tin SV tuần 26 (23.6)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=540925",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "542062",
+      "number": "2",
+      "title": "ĐIỂM TIN SINH VIÊN HK251 NĂM HỌC 2025-2026",
+      "items": [
+        {
+          "id": "593122",
+          "title": "Điểm tin SV tuần 44 (24/10)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=593122",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "595348",
+          "title": "Điểm tin SV tuần 45 (31/10)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=595348",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597737",
+          "title": "Điểm tin SV tuần 46 (07/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=597737",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601335",
+          "title": "Điểm tin SV tuần 47 (14/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=601335",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "604876",
+          "title": "Điểm tin SV tuần 49 (28/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=604876",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "606350",
+          "title": "Điểm tin SV tuần 50 (05/12)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=606350",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "607706",
+          "title": "Điểm tin SV tuần 51 (12/12)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=607706",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608522",
+          "title": "Điểm tin SV tuần 52 (19/12)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=608522",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608959",
+          "title": "Điểm tin SV tuần 53 (26/12)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=608959",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "574107",
+      "number": "3",
+      "title": "ĐIỂM TIN SINH VIÊN HK252 NĂM HỌC 2025-2026",
+      "items": [
+        {
+          "id": "619169",
+          "title": "Điểm tin SV tuần 01 (09/01)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=619169",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "633227",
+          "title": "Điểm tin SV tuần 02 (16/01)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=633227",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636374",
+          "title": "Điểm tin SV tuần 03 (23/01)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=636374",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "644197",
+          "title": "Điểm tin SV tuần 09 (27/02)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=644197",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645767",
+          "title": "Điểm tin SV tuần 10 (06/03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=645767",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "646676",
+          "title": "Điểm tin SV tuần 11 (13/03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=646676",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "648557",
+          "title": "Điểm tin SV tuần 12 (20/03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=648557",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "651992",
+          "title": "Điểm tin SV tuần 13 (27/03)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=651992",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "654925",
+          "title": "Điểm tin SV tuần 14 (03/04)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=654925",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "657292",
+          "title": "Điểm tin SV tuần 15 (10/04)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=657292",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "658504",
+          "title": "Điểm tin SV tuần 16 (17/04)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=658504",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "594025",
+      "number": "4",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

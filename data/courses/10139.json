@@ -1,0 +1,39 @@
+{
+  "course": {
+    "id": 10139,
+    "fullname": "Introduction to Computing (Practice) (CO1006)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=10139"
+  },
+  "sections": [
+    {
+      "id": "23811",
+      "number": "0",
+      "title": "General",
+      "items": []
+    },
+    {
+      "id": "23807",
+      "number": "1",
+      "title": "Topic 1",
+      "items": []
+    },
+    {
+      "id": "23803",
+      "number": "2",
+      "title": "Topic 2",
+      "items": []
+    },
+    {
+      "id": "23799",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,594 @@
+{
+  "course": {
+    "id": 62323,
+    "fullname": "Programming Fundamentals(Practice) (CO1028)_HK252_ALL",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=62323"
+  },
+  "sections": [
+    {
+      "id": "242747",
+      "number": "0",
+      "title": "Chung",
+      "items": [
+        {
+          "id": "645258",
+          "title": "SEB - Sample Test Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645258",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "242743",
+      "number": "1",
+      "title": "Prelab 01",
+      "items": [
+        {
+          "id": "645259",
+          "title": "C-String_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645259",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645260",
+          "title": "ClassString_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645260",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645261",
+          "title": "Multi-dimensional Array_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645261",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645262",
+          "title": "File IO_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645262",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645263",
+          "title": "Function_PreLab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645263",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "242739",
+      "number": "2",
+      "title": "Inlab 01",
+      "items": [
+        {
+          "id": "645264",
+          "title": "C-String_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645264",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645265",
+          "title": "ClassString_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645265",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645266",
+          "title": "Multi-dimensional Array_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645266",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645267",
+          "title": "File IO_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645267",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645268",
+          "title": "Function_InLab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645268",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "242735",
+      "number": "3",
+      "title": "Postlab 01",
+      "items": [
+        {
+          "id": "645269",
+          "title": "C-String_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645269",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645270",
+          "title": "ClassString_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645270",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645271",
+          "title": "Multi-dimensional Array_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645271",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645272",
+          "title": "File IO_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645272",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645273",
+          "title": "Function_PostLab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645273",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587832",
+      "number": "4",
+      "title": "Prelab 02",
+      "items": [
+        {
+          "id": "645274",
+          "title": "Recursion_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645274",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645275",
+          "title": "Pointer Basic_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645275",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645276",
+          "title": "Pointer 2_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645276",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645277",
+          "title": "Struct_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645277",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587833",
+      "number": "5",
+      "title": "Inlab 02",
+      "items": [
+        {
+          "id": "645278",
+          "title": "Recursion_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645278",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645279",
+          "title": "Pointer Basic_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645279",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645280",
+          "title": "Pointer 2_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645280",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645281",
+          "title": "Struct_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645281",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587834",
+      "number": "6",
+      "title": "Postlab 02",
+      "items": [
+        {
+          "id": "645282",
+          "title": "Recursion_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645282",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645283",
+          "title": "Pointer Basic_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645283",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645284",
+          "title": "Pointer 2_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645284",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645285",
+          "title": "Struct_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645285",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587835",
+      "number": "7",
+      "title": "Prelab 03",
+      "items": [
+        {
+          "id": "645286",
+          "title": "Linked List_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645286",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645287",
+          "title": "OOP_Prelab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645287",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587836",
+      "number": "8",
+      "title": "Inlab 03",
+      "items": [
+        {
+          "id": "645288",
+          "title": "Linked List_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645288",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645289",
+          "title": "OOP_Inlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645289",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587837",
+      "number": "9",
+      "title": "Postlab 03",
+      "items": [
+        {
+          "id": "645290",
+          "title": "Linked List_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645290",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645291",
+          "title": "OOP_Postlab Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645291",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587838",
+      "number": "10",
+      "title": "Practice opened Quizzes",
+      "items": [
+        {
+          "id": "645292",
+          "title": "Mục này đăng lại các bài Quiz đã mở. Bài làm của S...",
+          "url": "#module-645292",
+          "url_kind": "module_anchor",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645293",
+          "title": "C-String_Postlab (Re-opened) Trắc nghiệm",
+          "url": "#module-645293",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645294",
+          "title": "ClassString_Postlab (Re-opened) Trắc nghiệm",
+          "url": "#module-645294",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645295",
+          "title": "Multi-dimensional Array_Prelab (Re-open) Trắc nghiệm",
+          "url": "#module-645295",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645296",
+          "title": "Multi-dimensional Array_Inlab (Re-open) Trắc nghiệm",
+          "url": "#module-645296",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645297",
+          "title": "Multi-dimensional Array_Postlab (Re-opened) Trắc nghiệm",
+          "url": "#module-645297",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645298",
+          "title": "File IO_Prelab (Re-open) Trắc nghiệm",
+          "url": "#module-645298",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645299",
+          "title": "File IO_Inlab (Re-open) Trắc nghiệm",
+          "url": "#module-645299",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645300",
+          "title": "File IO_Postlab (Re-opened) Trắc nghiệm",
+          "url": "#module-645300",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645301",
+          "title": "Function_PreLab (Re-opened) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645301",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645302",
+          "title": "Function_InLab (Re-opened) + 1 new question Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645302",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645303",
+          "title": "Function_PostLab (Re-opened) Trắc nghiệm",
+          "url": "#module-645303",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645304",
+          "title": "Recursion_Prelab (Re-open) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645304",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645305",
+          "title": "Recursion_Inlab (Re-open) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645305",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645306",
+          "title": "Pointer Basic_Prelab (Re-open) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645306",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645307",
+          "title": "Pointer Basic_Inlab (Re-open) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645307",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645308",
+          "title": "OOP_Prelab (Re-open) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645308",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645309",
+          "title": "OOP_Inlab (Re-open) Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645309",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "587839",
+      "number": "11",
+      "title": "Lab Test",
+      "items": [
+        {
+          "id": "657618",
+          "title": "L05 - LABTEST Trắc nghiệm",
+          "url": "#module-657618",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "657064",
+          "title": "L06 - LABTEST Trắc nghiệm",
+          "url": "#module-657064",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "657920",
+          "title": "L09 - LABTEST Trắc nghiệm",
+          "url": "#module-657920",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,34 @@
+{
+  "name": "bkscraper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Moodle ingestion + normalization pipeline with a minimal CLI",
+  "license": "UNLICENSED",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "sync": "tsx src/cli.ts sync",
+    "today": "tsx src/cli.ts today",
+    "list:assignments": "tsx src/cli.ts list-assignments",
+    "courses": "tsx src/cli.ts courses"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "axios-cookiejar-support": "^6.0.4",
+    "cheerio": "^1.1.2",
+    "commander": "^14.0.0",
+    "dotenv": "^17.2.1",
+    "tough-cookie": "^6.0.0",
+    "zod": "^4.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}

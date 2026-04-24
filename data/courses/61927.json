@@ -1,0 +1,95 @@
+{
+  "course": {
+    "id": 61927,
+    "fullname": "Programming Fundamentals (CO1027)_HK252_ALL",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=61927"
+  },
+  "sections": [
+    {
+      "id": "241163",
+      "number": "0",
+      "title": "Chung",
+      "items": [
+        {
+          "id": "637823",
+          "title": "Contact Info",
+          "url": "#module-637823",
+          "url_kind": "module_anchor",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "241159",
+      "number": "1",
+      "title": "Assignment 1",
+      "items": [
+        {
+          "id": "637820",
+          "title": "Assignment 1 - Forum Diễn đàn",
+          "url": "https://lms.hcmut.edu.vn/mod/forum/view.php?id=637820",
+          "url_kind": "direct",
+          "item_type": "forum",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "637816",
+          "title": "Mô tả đề (Vietnamese)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=637816",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "637818",
+          "title": "Specification (English)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=637818",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "637819",
+          "title": "Initial code",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=637819",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "639562",
+          "title": "Submission Trắc nghiệm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=639562",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "241155",
+      "number": "2",
+      "title": "Topic 2",
+      "items": []
+    },
+    {
+      "id": "241151",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,114 @@
+{
+  "course": {
+    "id": 4531,
+    "fullname": "Digital Systems (CO1023)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=4531"
+  },
+  "sections": [
+    {
+      "id": "1379",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "352176",
+          "title": "Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=352176",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "1375",
+      "number": "1",
+      "title": "Topic 1",
+      "items": [
+        {
+          "id": "571496",
+          "title": "Lec01 DS overview part1",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571496",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571498",
+          "title": "Lec01 DS overview part2",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571498",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571499",
+          "title": "Lec01 DS overview part3",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571499",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571500",
+          "title": "Lec01 DS overview part4",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571500",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "1371",
+      "number": "2",
+      "title": "Topic 2",
+      "items": [
+        {
+          "id": "571502",
+          "title": "Lec02 DS overview part1",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571502",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571505",
+          "title": "Lec02 DS overview part2",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571505",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571506",
+          "title": "Lec02 DS overview part3",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571506",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "1367",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,125 @@
+{
+  "course": {
+    "id": 131591,
+    "fullname": "Discrete Structures for Computing (CO1007)_Trần Tuấn Anh (CLC_HK252) [CC01,CC02]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=131591"
+  },
+  "sections": [
+    {
+      "id": "563271",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "611124",
+          "title": "Discrete Structures for Computing (CO1007)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=611124",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "650771",
+          "title": "[252]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Discrete Structures for Computing (CO1007)_Trần Tuấn Anh (CLC_HK252) [CC01,CC02]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=650771",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "563270",
+      "number": "1",
+      "title": "Resources",
+      "items": [
+        {
+          "id": "646499",
+          "title": "Student Slide material",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=646499",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "563268",
+      "number": "2",
+      "title": "Make-up classes CC01",
+      "items": []
+    },
+    {
+      "id": "597451",
+      "number": "3",
+      "title": "Make up class CC02",
+      "items": [
+        {
+          "id": "658437",
+          "title": "Make-up class1 (CC02 only)",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=658437",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "582013",
+      "number": "4",
+      "title": "Midterm example",
+      "items": [
+        {
+          "id": "650194",
+          "title": "Old midterm 5 Key",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=650194",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "650196",
+          "title": "De thi mau giua ki",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=650196",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "592412",
+      "number": "5",
+      "title": "New section",
+      "items": [
+        {
+          "id": "647907",
+          "title": "Screenshot 2026-03-14 142027",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=647907",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "592413",
+      "number": "6",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

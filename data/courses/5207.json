@@ -1,0 +1,347 @@
+{
+  "course": {
+    "id": 5207,
+    "fullname": "Introduction to Computing (CO1005)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=5207"
+  },
+  "sections": [
+    {
+      "id": "4083",
+      "number": "0",
+      "title": "Video",
+      "items": [
+        {
+          "id": "397563",
+          "title": "CO1005_NhapMonDienToan_IntroductiontoComputing_Videos",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=397563",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "411059",
+      "number": "1",
+      "title": "Video bài giảng (Extra)",
+      "items": [
+        {
+          "id": "397567",
+          "title": "Starting C++ videos by Dr Han Duy Phan at youtube....",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=397575",
+          "url_kind": "direct",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397571",
+          "title": "CO1005_NhapMonDienToan_Introduction to Computing_Videos_Tiếng Anh",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=397571",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397575",
+          "title": "Install Visual Studio 2022 & Create First C++ Program",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=397575",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397579",
+          "title": "Cài đặt Visual Studio 2022 và viết chương trình C++ đầu tiên",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=397579",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397583",
+          "title": "Các thành phần cơ bản C++ (Tiếng Việt) SCORM package",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=397583",
+          "url_kind": "direct",
+          "item_type": "scorm",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397587",
+          "title": "Cái khái niệm cơ bản trên C++ (Tiếng Việt) SCORM package",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=397587",
+          "url_kind": "direct",
+          "item_type": "scorm",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397591",
+          "title": "Cấu trúc chọn lựa của C++ (Tiếng Việt) SCORM package",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=397591",
+          "url_kind": "direct",
+          "item_type": "scorm",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397595",
+          "title": "Cấu trúc lặp trên C++ (Tiếng Việt) SCORM package",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=397595",
+          "url_kind": "direct",
+          "item_type": "scorm",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397599",
+          "title": "Internet Of Thing (Tiếng Việt) SCORM package",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=397599",
+          "url_kind": "direct",
+          "item_type": "scorm",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "411187",
+      "number": "2",
+      "title": "Quiz_HK251",
+      "items": [
+        {
+          "id": "397603",
+          "title": "Quiz 1",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397603",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397607",
+          "title": "Quiz 2",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397607",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397611",
+          "title": "Quiz 3",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397611",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397615",
+          "title": "Quiz 4",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397615",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397619",
+          "title": "Quiz 5",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397619",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397623",
+          "title": "Quiz 6",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397623",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397627",
+          "title": "Quiz 7",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397627",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397631",
+          "title": "Quiz 8",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=397631",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "411183",
+      "number": "3",
+      "title": "Slides (HK221)",
+      "items": [
+        {
+          "id": "397635",
+          "title": "W2Chap2WithExercises _ DrHanDuyPhan",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397635",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397639",
+          "title": "W3&4Chap3WithExercises _ DrHanDuyPhan",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397639",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397643",
+          "title": "W4&5Chap4WithExercises _ DrHanDuyPhan",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397643",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397647",
+          "title": "W6&7Chap5WithExercises_DrHanDuyPhan_Simplified",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397647",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397651",
+          "title": "W7&8 JVNArchitectureWithExercises_DrHanDuyPhan",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397651",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397655",
+          "title": "W10 Introduction to network and iot",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397655",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397659",
+          "title": "W11 Privacy, Security, and Ethics",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397659",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "414527",
+      "number": "4",
+      "title": "Slides (Các HK trước)",
+      "items": [
+        {
+          "id": "397663",
+          "title": "Chapter 0",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397663",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397667",
+          "title": "Chapter 1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397667",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397671",
+          "title": "Chapter 2",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397671",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397675",
+          "title": "Chapter 3",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397675",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397679",
+          "title": "Chapter 4",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397679",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397683",
+          "title": "Chapter 5",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397683",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397687",
+          "title": "Chapter 6",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397687",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "397691",
+          "title": "Chapter 7",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=397691",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

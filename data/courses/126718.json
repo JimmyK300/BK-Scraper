@@ -1,0 +1,278 @@
+{
+  "course": {
+    "id": 126718,
+    "fullname": "Digital Systems (CO1023)_TRẦN NGỌC THỊNH (CLC_HK251) [CC03,CC04]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=126718"
+  },
+  "sections": [
+    {
+      "id": "538186",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "571277",
+          "title": "Digital Systems (CO1023)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=571277",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571478",
+          "title": "Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571478",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "600197",
+          "title": "[251]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Digital Systems (CO1023)_TRẦN NGỌC THỊNH (CLC_HK251) [CC03,CC04]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=600197",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "617109",
+          "title": "Final Grades_CC03A",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=617109",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "617110",
+          "title": "Final Grades_CC03B",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=617110",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "617111",
+          "title": "Final Grades_CC03C",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=617111",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "617112",
+          "title": "Final Grades_CC04A",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=617112",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "617113",
+          "title": "Final Grades_CC04B",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=617113",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "617114",
+          "title": "Final Grades_CC04C",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=617114",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538185",
+      "number": "1",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571479",
+          "title": "Lec01",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571479",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571480",
+          "title": "homework1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571480",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538184",
+      "number": "2",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571481",
+          "title": "Lec02",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571481",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571482",
+          "title": "Homework2",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571482",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538183",
+      "number": "3",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571483",
+          "title": "Lec03",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571483",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571484",
+          "title": "homework 3",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571484",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538375",
+      "number": "4",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571485",
+          "title": "Lec04",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571485",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571486",
+          "title": "Homework4",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571486",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538376",
+      "number": "5",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571487",
+          "title": "Lec05",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571487",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571488",
+          "title": "Homework5",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571488",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538377",
+      "number": "6",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571489",
+          "title": "Lec06",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571489",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571490",
+          "title": "Homework6",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571490",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538378",
+      "number": "7",
+      "title": "New section",
+      "items": [
+        {
+          "id": "571491",
+          "title": "Lec07",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=571491",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608860",
+          "title": "Practice_Test",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=608860",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,49 @@
+{
+  "course": {
+    "id": 134825,
+    "fullname": "Lớp Chủ nhiệm (LCN)_NGUYỄN QUỐC MINH (CTTA_HK252)",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=134825"
+  },
+  "sections": [
+    {
+      "id": "578117",
+      "number": "0",
+      "title": "Chung",
+      "items": [
+        {
+          "id": "647905",
+          "title": "Hợp lớp 14/03/2026 Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=647905",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "578116",
+      "number": "1",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "578115",
+      "number": "2",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "578114",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

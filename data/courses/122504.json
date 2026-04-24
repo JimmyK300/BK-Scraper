@@ -1,0 +1,361 @@
+{
+  "course": {
+    "id": 122504,
+    "fullname": "General Physics 1 (PH1003)_ĐỖ NGỌC SƠN (CLC_HK251) [CC02,CC04,CC17,CC19]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=122504"
+  },
+  "sections": [
+    {
+      "id": "518461",
+      "number": "0",
+      "title": "Associate Professor: Do Ngoc Son. Email: dnson@hcmut.edu.vn. https://orcid.org/0000-0001-9414-9727",
+      "items": [
+        {
+          "id": "547959",
+          "title": "General Physics 1 (PH1003)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=547959",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "575566",
+          "title": "De cuong 2024 VL1-PH1003 Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=575566",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609375",
+          "title": "I uploaded the final exam score of general physics 1 to your account on the LMS system. You can check it now.",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=609180",
+          "url_kind": "direct",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "599337",
+          "title": "[251]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE General Physics 1 (PH1003)_ĐỖ NGỌC SƠN (CLC_HK251) [CC02,CC04,CC17,CC19]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=599337",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "518460",
+      "number": "1",
+      "title": "MECHANICS",
+      "items": [
+        {
+          "id": "575567",
+          "title": "1.Chapter 1 Kinematics-Theory",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=575567",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583714",
+          "title": "2.Chapter 2 Dynamics of particle-Theory",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583714",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "585640",
+          "title": "3.Chapter3 Dynamics of particle systems-Theory",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=585640",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "588524",
+          "title": "Torque of spinning wheel",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=588524",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "591600",
+          "title": "Review-mechanics",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=591600",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "518459",
+      "number": "2",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "518458",
+      "number": "3",
+      "title": "THERMODYNAMICS",
+      "items": [
+        {
+          "id": "594333",
+          "title": "Lecture 4.1 ThermalPhysics Intro",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=594333",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "594334",
+          "title": "Lecture 4.1 ThermalPhysics Introduction exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=594334",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "594335",
+          "title": "Lecture 4.2 The Kinetic Theory of Gases",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=594335",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "594336",
+          "title": "Lecture 4.2 (supplement) Maxwell-Boltzmann",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=594336",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "594337",
+          "title": "Lecture 4.2 The Kinetic Theory of Gases-exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=594337",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597044",
+          "title": "Lecture 5.1 The 1stLaw Thermodynamics",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=597044",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597045",
+          "title": "Lecture 5.1 The 1stLaw of Thermodynamics-exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=597045",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597046",
+          "title": "Lecture 5.2 Heat Engine",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=597046",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597068",
+          "title": "How Diesel Engines Work - Part - 1 (Four Stroke Combustion Cycle)",
+          "url": "https://lms.hcmut.edu.vn/pluginfile.php/1305634/mod_label/intro/How%20Diesel%20Engines%20Work%20-%20Part%20-%201%20%28Four%20Stroke%20Combustion%20Cycle%29.mp4",
+          "url_kind": "direct",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "600776",
+          "title": "Lecture 5.3 2nd law of thermodynamics",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=600776",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "600777",
+          "title": "Lecture 5.2-5.3-The 2nd law of thermodynamics-exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=600777",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "551612",
+      "number": "4",
+      "title": "1) Score for the midterm exam was updated to your user account on the LMS system.",
+      "items": []
+    },
+    {
+      "id": "551904",
+      "number": "5",
+      "title": "ELECTRIC AND MAGNETIC FIELDS",
+      "items": [
+        {
+          "id": "602358",
+          "title": "Lecture 6.1 Electric Field",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=602358",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "602357",
+          "title": "Lecture 6.2 Electric potential",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=602357",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "602411",
+          "title": "Lecture 6.3 Gauss Law",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=602411",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "604235",
+          "title": "Lecture 7.1 Magnetic field",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=604235",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "605808",
+          "title": "Lecture 7.2 Ampere Law",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=605808",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "552683",
+      "number": "6",
+      "title": "Blended learning in the 50th week:",
+      "items": [
+        {
+          "id": "607293",
+          "title": "Study chapter \"Vật dẫn trong điện trường tĩnh - điện môi\" in the book \"Bài tập Vật lý đại cương A1\" of Dr. Trần Văn Lượng. Focus on the theory and answer the theoretical questions..",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=607293",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "552825",
+      "number": "7",
+      "title": "Blended learning in the 51st week:",
+      "items": [
+        {
+          "id": "608302",
+          "title": "Review Chapters 4 and 5 (Thermodynamics), Chapter ...",
+          "url": "#module-608302",
+          "url_kind": "module_anchor",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "553003",
+      "number": "8",
+      "title": "Bonus list: 1 bonus = 0.5 points will be added to elearning and assignment until finish. Your response must send to dnson@hcmut.edu.vn before 10 am tomorrow 05/01/2026",
+      "items": [
+        {
+          "id": "609501",
+          "title": "courseid 122504 participants-CC02-Bonus",
+          "url": "#module-609501",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609504",
+          "title": "courseid 122504 participants-CC04-Bonus",
+          "url": "#module-609504",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609503",
+          "title": "courseid 122504 participants-CC17-Bonus",
+          "url": "#module-609503",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609502",
+          "title": "courseid 122504 participants-CC19-Bonus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=609502",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "553005",
+      "number": "9",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

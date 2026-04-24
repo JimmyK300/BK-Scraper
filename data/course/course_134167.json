@@ -1,0 +1,246 @@
+{
+  "course": {
+    "id": 134167,
+    "fullname": "Linear Algebra",
+    "course_code": "MT1007",
+    "lecturer": "Đặng Thị Kim Nhung",
+    "education_program": "CLC",
+    "semester": "HK252",
+    "group_classes": [
+      "CC02",
+      "CC03",
+      "CC04",
+      "CC05",
+      "CC06",
+      "CC07",
+      "CC08"
+    ],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=134167"
+  },
+  "sections": [
+    {
+      "id": "574236",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "619327",
+          "title": "Linear Algebra (MT1007)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=619327",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "630968",
+          "title": "Extra Explanation and Examples on Finding Principal Argument",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=630968",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "633538",
+          "title": "chapter 2. Matrix",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=633538",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "637532",
+          "title": "chapter 2.2 Determinant",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=637532",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "639749",
+          "title": "Chapter 2.3 System of linear equations",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=639749",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "641484",
+          "title": "Test and practice exercises for Chapter 2",
+          "url": "https://lms.hcmut.edu.vn/mod/forum/view.php?id=641484",
+          "item_type": "forum",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "641486",
+          "title": "Course Information",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=641486",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "643625",
+          "title": "Group Project – Member Lists",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=643625",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "646522",
+          "title": "Chapter 3.2 Coordinate vectors",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=646522",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "647926",
+          "title": "Chapter 3.1 Vector Spaces",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=647926",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "651902",
+          "title": "General Requirements for the Group Project",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=651902",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "651906",
+          "title": "Important Announcement: Group Project Topic and Quiz Reopening",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=651906",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "652867",
+          "title": "[252]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Linear Algebra (MT1007)_Đặng Thị Kim Nhung (CLC_HK252) [CC02,CC03,CC04,CC05,CC06,CC07,CC08]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=652867",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "655285",
+          "title": "Midterm Exam Content",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=655285",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "657447",
+          "title": "Chapter 4 Euclidean space",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=657447",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "658892",
+          "title": "Chapter 4 Euclidean space (cont.)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=658892",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "574235",
+      "number": "1",
+      "title": "CC02",
+      "items": [
+        {
+          "id": "629052",
+          "title": "Group project (major assignment)",
+          "url": "https://lms.hcmut.edu.vn/mod/forum/view.php?id=629052",
+          "item_type": "forum",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "574234",
+      "number": "2",
+      "title": "CC03",
+      "items": []
+    },
+    {
+      "id": "574233",
+      "number": "3",
+      "title": "CC08",
+      "items": []
+    },
+    {
+      "id": "575480",
+      "number": "4",
+      "title": "CC05",
+      "items": []
+    },
+    {
+      "id": "580432",
+      "number": "5",
+      "title": "CC04",
+      "items": []
+    },
+    {
+      "id": "580433",
+      "number": "6",
+      "title": "CC06",
+      "items": []
+    },
+    {
+      "id": "580434",
+      "number": "7",
+      "title": "CC07",
+      "items": []
+    },
+    {
+      "id": "585118",
+      "number": "8",
+      "title": "Practice exercises",
+      "items": [
+        {
+          "id": "641478",
+          "title": "Chapter 2. Matrix - Determinant - System of linear equations",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=641478",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "585119",
+      "number": "9",
+      "title": "Test 10% of the final grade",
+      "items": [
+        {
+          "id": "641479",
+          "title": "Chapter 2 Matrix - Determinant - Linear Systems DEADLINE: 28 Feb 2026",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=641479",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645025",
+          "title": "Chapter 1 Complex numbers + Chapter 2 Some applications of matrices DEALINE: 12 Mar 2026",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645025",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ]
+}

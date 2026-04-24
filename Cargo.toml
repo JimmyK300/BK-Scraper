@@ -1,0 +1,6 @@
+[workspace]
+members = [
+	"crates/lms_cli",
+	"crates/lms_core",
+]
+resolver = "2"

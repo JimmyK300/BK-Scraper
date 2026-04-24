@@ -1,0 +1,114 @@
+{
+  "course": {
+    "id": 132116,
+    "fullname": "Self-Management Skills (SK1003)_Phan Thành Nhân (CLC_HK252) [CC41]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=132116"
+  },
+  "sections": [
+    {
+      "id": "565371",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "611649",
+          "title": "Self-Management Skills (SK1003)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=611649",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "652632",
+          "title": "[252]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Self-Management Skills (SK1003)_Phan Thành Nhân (CLC_HK252) [CC41]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=652632",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "565370",
+      "number": "1",
+      "title": "Syllabus and Lecture Note",
+      "items": [
+        {
+          "id": "645391",
+          "title": "DCMH.SK1003 Self-Management Skills Signed",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=645391",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645392",
+          "title": "CHƯƠNG 3 - KỸ NĂNG TỰ QUẢN LÝ",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=645392",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645393",
+          "title": "CHƯƠNG 2 - KỸ NĂNG TỰ NHẬN THỨC",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=645393",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645394",
+          "title": "CHƯƠNG 1 - CƠ SỞ LÝ LUẬN VÀ TẦM QUAN TRỌNG CỦA QLBT TRONG BỐI CẢNH 4.0",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=645394",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645395",
+          "title": "Bài trắc nghiệm về đề cương môn học",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=645395",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "565369",
+      "number": "2",
+      "title": "DIỄN ĐÀN TRAO ĐỔI VÀ THẢO LUẬN BÀI CUỐI KỲ",
+      "items": [
+        {
+          "id": "645396",
+          "title": "DIỄN ĐÀN TRAO ĐỔI VÀ THẢO LUẬN BÀI CUỐI KỲ",
+          "url": "https://lms.hcmut.edu.vn/mod/forum/view.php?id=645396",
+          "url_kind": "direct",
+          "item_type": "forum",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "565368",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

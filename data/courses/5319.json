@@ -1,0 +1,39 @@
+{
+  "course": {
+    "id": 5319,
+    "fullname": "Programming Fundamentals (Lab) (CO1028)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=5319"
+  },
+  "sections": [
+    {
+      "id": "4531",
+      "number": "0",
+      "title": "General",
+      "items": []
+    },
+    {
+      "id": "4527",
+      "number": "1",
+      "title": "Topic 1",
+      "items": []
+    },
+    {
+      "id": "4523",
+      "number": "2",
+      "title": "Topic 2",
+      "items": []
+    },
+    {
+      "id": "4519",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

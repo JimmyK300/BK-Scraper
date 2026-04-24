@@ -1,0 +1,365 @@
+{
+  "course": {
+    "id": 130070,
+    "fullname": "General Physics Labs (PH1007)_CAO ĐÌNH \r\nMINH QUÂN (CLC_HK252) [CC01,CC08,CC13,CC14,CC17,CC18,CC21,CC22,CC27,CC40]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=130070"
+  },
+  "sections": [
+    {
+      "id": "557187",
+      "number": "0",
+      "title": "GENERAL",
+      "items": [
+        {
+          "id": "609603",
+          "title": "General Physics Labs (PH1007)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=609603",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614813",
+          "title": "General Physics Labs (PH1007)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=614813",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614827",
+          "title": "REPORT FORMAT",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614827",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614815",
+          "title": "Linear 1mm with 5mm semi-bold and 10mm bold",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614815",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614816",
+          "title": "Syllabus PH1007 General Physics Labs",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614816",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614817",
+          "title": "Video_Vietnamses",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=614817",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "557186",
+      "number": "1",
+      "title": "BOOK GENERAL PHYSICS LAB",
+      "items": [
+        {
+          "id": "614818",
+          "title": "Book General Physics Lab",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614818",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614819",
+          "title": "Page 144-145",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614819",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614820",
+          "title": "Page 150-151",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614820",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "557185",
+      "number": "2",
+      "title": "INTRODUCTION",
+      "items": [
+        {
+          "id": "614821",
+          "title": "LECTURE NOTE: GENERAL LABORATORY LABS INFORMATION",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614821",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614822",
+          "title": "GENERAL PHYSICS LABS (PDF)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614822",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614823",
+          "title": "VERNIER CALIPER - MICROMETER CALIPER",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614823",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614824",
+          "title": "General Physics Guidelines for Laboratory Report",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614824",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "557184",
+      "number": "3",
+      "title": "MEASUREMENT AND UNCERTAINTIES",
+      "items": [
+        {
+          "id": "614825",
+          "title": "LECTURE NOTE: MEASUREMENT AND UNCERTAINTIES",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614825",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614826",
+          "title": "MEASUREMENT AND UNCERTAINTIES (PDF))",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614826",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573589",
+      "number": "4",
+      "title": "LAB 1",
+      "items": [
+        {
+          "id": "614828",
+          "title": "REPORT LAB 1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614828",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573590",
+      "number": "5",
+      "title": "LAB 2",
+      "items": [
+        {
+          "id": "614829",
+          "title": "REPORT LAB 2",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614829",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614830",
+          "title": "Linear 1mm with 5mm semi-bold and 10mm bold",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614830",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573591",
+      "number": "6",
+      "title": "LAB 3",
+      "items": [
+        {
+          "id": "614831",
+          "title": "REPORT LAB 3",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614831",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573592",
+      "number": "7",
+      "title": "LAB 4",
+      "items": [
+        {
+          "id": "614832",
+          "title": "REPORT LAB 4",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614832",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614833",
+          "title": "Linear 1mm with 5mm semi-bold and 10mm bold",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614833",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573593",
+      "number": "8",
+      "title": "LAB 5",
+      "items": [
+        {
+          "id": "614834",
+          "title": "REPORT LAB 5",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614834",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573594",
+      "number": "9",
+      "title": "LAB 6",
+      "items": [
+        {
+          "id": "614835",
+          "title": "REPORT LAB 6",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614835",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573595",
+      "number": "10",
+      "title": "LAB 7",
+      "items": [
+        {
+          "id": "614836",
+          "title": "REPORT LAB 7",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614836",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614837",
+          "title": "Linear 1mm with 5mm semi-bold and 10mm bold",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614837",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573596",
+      "number": "11",
+      "title": "LAB 8",
+      "items": [
+        {
+          "id": "614838",
+          "title": "REPORT LAB 8",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614838",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573597",
+      "number": "12",
+      "title": "LAB 9",
+      "items": [
+        {
+          "id": "614839",
+          "title": "REPORT LAB 9",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614839",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "573598",
+      "number": "13",
+      "title": "LAB 10",
+      "items": [
+        {
+          "id": "614840",
+          "title": "REPORT LAB 10",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614840",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,194 @@
+{
+  "course": {
+    "id": 6375,
+    "fullname": "Calculus 2 (MT1005)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=6375"
+  },
+  "sections": [
+    {
+      "id": "8755",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "64131",
+          "title": "Calculus 2 (MT1005)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64131",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64135",
+          "title": "Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=64135",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64139",
+          "title": "Quiz",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=64139",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64143",
+          "title": "VIDEO: INTRODUCTION TO FUNCTIONS OF SEVERAL VARIABLES",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64143",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "234996",
+      "number": "1",
+      "title": "Blended learning",
+      "items": [
+        {
+          "id": "253120",
+          "title": "Blended learning: Review of the final",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=253120",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "8751",
+      "number": "2",
+      "title": "Materials",
+      "items": [
+        {
+          "id": "64147",
+          "title": "Textbook (Chapter 14: Partial Derivatives)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64147",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64151",
+          "title": "Solution's Manual of Textbook",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64151",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "544646",
+          "title": "Midterm_exam 243",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=544646",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568806",
+          "title": "Final_exam_243",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=568806",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "8747",
+      "number": "3",
+      "title": "Videos",
+      "items": [
+        {
+          "id": "64155",
+          "title": "Youtube Link (Short Video 1a, Nguyen Quoc Lan, 2m06s): Chapter 01 Section 1a",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64155",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64159",
+          "title": "Youtube Link (Short Video, 12m43s): Chapter 01 Section 1b",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64159",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64503",
+          "title": "Youtube Link (Short Video, Nguyen Quoc Lan, 8m27s): Chapter 01 Section 01f",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64503",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64507",
+          "title": "Youtube Link: Full 03a (Nguyen Quoc Lan, 42m): Extrema",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64507",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "8743",
+      "number": "4",
+      "title": "Slides",
+      "items": [
+        {
+          "id": "64511",
+          "title": "Slides of Full Chapter 2 Double Integral",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64511",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "64515",
+          "title": "Slides of Full Chapter 3 Triple Integral",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=64515",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "537397",
+          "title": "Final exam 242",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=537397",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

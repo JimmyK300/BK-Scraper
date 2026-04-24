@@ -1,0 +1,58 @@
+{
+  "course": {
+    "id": 132621,
+    "fullname": "Discrete Structures for Computing (CO1007)_Trịnh Văn Giang (CLC_HK252) [CC02]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=132621"
+  },
+  "sections": [
+    {
+      "id": "567391",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "612154",
+          "title": "Discrete Structures for Computing (CO1007)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=612154",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "639122",
+          "title": "News",
+          "url": "#module-639122",
+          "url_kind": "module_anchor",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "567390",
+      "number": "1",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "567389",
+      "number": "2",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "567388",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

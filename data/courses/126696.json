@@ -1,0 +1,160 @@
+{
+  "course": {
+    "id": 126696,
+    "fullname": "Effective Communication Skills (SK1001)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=126696"
+  },
+  "sections": [
+    {
+      "id": "538075",
+      "number": "0",
+      "title": "Effective Communication Skills",
+      "items": [
+        {
+          "id": "587083",
+          "title": "SK1001 Course information",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=587083",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587203",
+          "title": "SK1001 Tài liệu học tập",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=587203",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587204",
+          "title": "SK1001 Slide bài giảng",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=587204",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "544789",
+      "number": "1",
+      "title": "Quiz lớp tiếng Việt có thời khoá biểu từ tuần 10 - tuần 18",
+      "items": [
+        {
+          "id": "587172",
+          "title": "Quiz ôn tập",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=587172",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587173",
+          "title": "Quiz midterm 40%",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=587173",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538074",
+      "number": "2",
+      "title": "Quiz for English class from week 10-18",
+      "items": [
+        {
+          "id": "587096",
+          "title": "Quiz review",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=587096",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587104",
+          "title": "Quiz midterm 40% grade",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=587104",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538072",
+      "number": "3",
+      "title": "Useful links to learn communication skills",
+      "items": [
+        {
+          "id": "587185",
+          "title": "Nói gì khi không biết nói gì? (Iammaitrang)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=587185",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587186",
+          "title": "Ứng xử thông minh với thông tin không vui (TS. Huỳnh Văn Sơn)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=587186",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587187",
+          "title": "Để giao tiếp chuyên nghiệp hơn qua Facebook (TS. Nguyễn Hoàng Khắc Hiếu)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=587187",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587189",
+          "title": "5 ways to connect with people (Ted-Ed)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=587189",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587191",
+          "title": "Class takeaways — Essentials of strategic communication (Stanford Graduate School of Business)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=587191",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587199",
+          "title": "Effective Cross Cultural Communication 101 (Cross culture Communication channel)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=587199",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

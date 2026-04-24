@@ -1,0 +1,59 @@
+{
+  "course": {
+    "id": 4371,
+    "fullname": "Programming Fundamentals (CO1027)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=4371"
+  },
+  "sections": [
+    {
+      "id": "739",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "28487",
+          "title": "Course syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=28487",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "735",
+      "number": "1",
+      "title": "Lectures",
+      "items": [
+        {
+          "id": "28491",
+          "title": "Video lectures SCORM package",
+          "url": "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=28491",
+          "url_kind": "direct",
+          "item_type": "scorm",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "731",
+      "number": "2",
+      "title": "Assignment",
+      "items": []
+    },
+    {
+      "id": "727",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

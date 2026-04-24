@@ -1,0 +1,123 @@
+{
+  "course": {
+    "id": 126381,
+    "fullname": "Introduction to Computing (CO1005)_Masayuki Ida (CLC_HK251) [CC01,CC02]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=126381"
+  },
+  "sections": [
+    {
+      "id": "535883",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "582115",
+          "title": "Introduction to Computing (CO1005)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=582115",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "571834",
+          "title": "teaching material set is for Day1, Day2, and Day3",
+          "url": "#module-571834",
+          "url_kind": "module_anchor",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "600167",
+          "title": "[251]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Introduction to Computing (CO1005)_Masayuki Ida (CLC_HK251) [CC01,CC02]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=600167",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "535882",
+      "number": "1",
+      "title": "Materials for Sept 10/11 and Sept 17/18",
+      "items": [
+        {
+          "id": "573057",
+          "title": "Day1 outline text",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=573057",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "573058",
+          "title": "Day2 outline text",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=573058",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "577153",
+          "title": "Day1 slides on Sept 10",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=577153",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "580382",
+          "title": "Self-study text for expected Day3",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=580382",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "580819",
+          "title": "Day2 slides as of Septeber 17",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=580819",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538577",
+      "number": "2",
+      "title": "General References",
+      "items": [
+        {
+          "id": "573278",
+          "title": "What is Intro to Computing",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=573278",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "538594",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

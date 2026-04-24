@@ -1,0 +1,112 @@
+{
+  "course": {
+    "id": 131246,
+    "fullname": "Programming Fundamentals (CO1027)_NGUYỄN QUỐC MINH (CLC_HK252) [CC03,CC05,CC06]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=131246"
+  },
+  "sections": [
+    {
+      "id": "561891",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "629764",
+          "title": "Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=629764",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "629878",
+          "title": "Lecture Slides",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=629878",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "630929",
+          "title": "GradePolicy",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=630929",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "610779",
+          "title": "Programming Fundamentals (CO1027)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=610779",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638291",
+          "title": "CC05-QUIZ-1",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=638291",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638434",
+          "title": "CC03-QUIZ-1",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=638434",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638493",
+          "title": "CC06-QUIZ-1",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=638493",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "650688",
+          "title": "[252]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Programming Fundamentals (CO1027)_NGUYỄN QUỐC MINH (CLC_HK252) [CC03,CC05,CC06]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=650688",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "561890",
+      "number": "1",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "561889",
+      "number": "2",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "561888",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,939 @@
+{
+  "course": {
+    "id": 103,
+    "fullname": "Thông tin Học vụ (Info. Academic Affairs)",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=103"
+  },
+  "sections": [
+    {
+      "id": "7",
+      "number": "0",
+      "title": "THÔNG BÁO CHUNG",
+      "items": [
+        {
+          "id": "636299",
+          "title": "Kế hoạch thu học phí HK252 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=636299",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "635829",
+          "title": "THÔNG BÁO V/v dời lịch đăng ký môn Thực tập ngoài trường HK252 – Đợt 2 (SV đi trong Hè) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=635829",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "634068",
+          "title": "Thông báo V/v đăng ký bổ sung các học phần Giáo dục Thể chất của HK252 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=634068",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "627727",
+          "title": "THÔNG BÁO V/v dời lịch đăng ký môn học Học kỳ dự thính 252 - Đợt 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=627727",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "633415",
+          "title": "Thông báo V/v đăng ký học phần tốt nghiệp đợt cuối trong học kỳ 2 năm học 2025-2026 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=633415",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "616495",
+          "title": "Thông báo Về việc Rút môn học của Học kỳ 2 năm học 2025-2026 (HK252) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=616495",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609191",
+          "title": "THÔNG BÁO V/v thông báo mở thêm đợt đăng ký bổ sung môn học – HK 252 (Đợt 4) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=609191",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608531",
+          "title": "THÔNG BÁO V/v đăng ký môn học Học kỳ Dự thính HK252 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=608531",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608329",
+          "title": "THÔNG BÁO V/v đăng ký môn học Học kỳ chính 252 - Đợt 3 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=608329",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "597538",
+          "title": "THÔNG BÁO V/v Gia hạn thời gian thực hiện, Kế hoạch đánh giá ĐATN/LVThS Học kỳ 1/2025-2026 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=597538",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "592875",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Chính – HK252 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=592875",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "591124",
+          "title": "Thông báo về việc đăng ký thi TOEIC Quốc tế miễn phí cho sinh viên Khóa 2022 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=591124",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "585521",
+          "title": "THÔNG BÁO VỀ LỊCH THI TOEIC QUỐC TẾ MIỄN PHÍ DÀNH CHO SINH VIÊN KHÓA 22 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=585521",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583907",
+          "title": "THÔNG BÁO Về việc tặng miễn phí 01 lần thi TOEIC Quốc tế cho sinh viên Khóa 2022 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=583907",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "581754",
+          "title": "THÔNG BÁO Kế hoạch tổ chức thi Kỹ năng Ứng dụng CNTT cơ bản của Sinh viên khóa 2025 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=581754",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "554418",
+          "title": "THÔNG BÁO V/v đăng ký Giáo dục Thể chất (GDTC) – Học phần 1 cho sinh viên khóa 2025 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=554418",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "544675",
+          "title": "THÔNG BÁO V/v đăng ký môn học Học kỳ chính 251 - Đợt 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=544675",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "540965",
+          "title": "THÔNG BÁO Về việc kiểm tra văn bằng đầu vào và số hóa hồ sơ sinh viên khóa 2024 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=540965",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "540160",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK251 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=540160",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "536815",
+          "title": "THÔNG BÁO V/v đăng ký môn học Học kỳ Dự thính hè 243 - Đợt 3 và Rút môn học HK 243 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=536815",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "535033",
+          "title": "THÔNG BÁO V/v đăng ký môn học Học kỳ Dự thính hè 243 - Đợt 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=535033",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "532525",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Dự thính hè 243 - Đợt 1 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=532525",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "520743",
+          "title": "THÔNG BÁO LỊCH THI KỲ THI MOS ĐỢT 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=520743",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "509779",
+          "title": "Kỳ thi phân ngành – chuyển giai đoạn Chương trình đào tạo Kỹ sư chất lượng cao (PFIEV) năm 2025 Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=509779",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "496260",
+          "title": "THÔNG BÁO V/v đăng ký môn học Dự thính Lộ trình 2 – HK242 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=496260",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "480925",
+          "title": "LỊCH XỬ LÝ HỌC VỤ HỌC KỲ 242 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=480925",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "475160",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK242 (ĐỢT 3), Đăng ký học phần tốt nghiệp đợt cuối cùng, Rút môn học HK 242 & Lịch học vụ HK243 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=475160",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "473270",
+          "title": "THÔNG BÁO Kế hoạch học tập của học kỳ 2 năm học 2024-2025 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=473270",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "473035",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK242 (ĐỢT 2) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=473035",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "471079",
+          "title": "THÔNG BÁO VỀ VIỆC TỔ CHỨC KỲ THI KIỂM TRA ANH VĂN ĐẦU KHÓA (THEO ĐỊNH DẠNG TOEIC) CHO SINH VIÊN KHÓA 2024 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=471079",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "463543",
+          "title": "Lịch thi cuối kỳ chính thức HK241 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=463543",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "459733",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK242 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=459733",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "459632",
+          "title": "THÔNG BÁO SV ĐĂNG KÝ THI CHỨNG CHỈ MOS_KHÓA 2023 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=459632",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "459629",
+          "title": "Thông báo về việc nghỉ học ngày 26+27/10/2024 các lớp học tại phòng máy tính Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=459629",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "445459",
+          "title": "HƯỚNG DẪN DỰ THI KIỂM TRA ĐÁNH GIÁ KỸ NĂNG SỬ DỤNG CNTT CƠ BẢN Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=445459",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "441083",
+          "title": "Thông báo về Lịch thi và Quy định Chuẩn kỹ năng ứng dụng CNTT cơ bản của Sinh viên khóa 2024 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=441083",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "440503",
+          "title": "Lịch thi giữa kỳ chính thức HK241, Phương thức đăng ký hoãn thi Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=440503",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "404339",
+          "title": "Thông báo cho Sinh viên Khóa 2024 về cập nhật thời khóa biểu môn anh văn, Đăng ký môn học GDTC (đợt 3), Rút môn học, Học phí Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=404339",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "395491",
+          "title": "THÔNG BÁO V/v đăng ký môn học Dự thính Lộ trình 2 – HK241 (ĐỢT 2) và bổ sung các môn GDTC (học phần 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=395491",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "389599",
+          "title": "LỊCH XỬ LÝ HỌC VỤ HỌC KỲ 241 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=389599",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "354363",
+          "title": "Sinh viên khoá 2024: Đăng ký các môn anh văn Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=354363",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "354364",
+          "title": "Sinh viên khoá 2024: Đăng ký các môn Giáo dục thể chất Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=354364",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "291875",
+          "title": "Lịch thi cuối kỳ chính thức HK233 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=291875",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "291879",
+          "title": "Phương thức đăng ký Hoãn thi như sau: Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=291879",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "289755",
+          "title": "THÔNG BÁO V/v đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK241 (ĐỢT 2) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=289755",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "282852",
+          "title": "LỊCH TRÌNH TỐT NGHIỆP VÀ CẤP BẰNG ĐỢT THÁNG 11/2024 HỆ CHÍNH QUY, VỪA LÀM VỪA HỌC, BẰNG 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=282852",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "282112",
+          "title": "Chương trình đào tạo, Tín chỉ tự do Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=282112",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "252608",
+          "title": "THÔNG BÁO V/v kiểm tra văn bằng đầu vào và số hóa hồ sơ sinh viên năm 2023 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=252608",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "79",
+          "title": "Tổng kiểm tra bằng THPT năm 2022",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=79",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "83",
+          "title": "Vv dùng CC ngoại ngữ quốc xét chuyển điểm/miễn điểm các môn Anh văn/Pháp văn Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=83",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "250976",
+          "title": "Tín chỉ tự do Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=250976",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "39",
+      "number": "1",
+      "title": "Lịch kiểm tra - Thi",
+      "items": [
+        {
+          "id": "656315",
+          "title": "Lịch thi cuối học kỳ HK252 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=656315",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "656117",
+          "title": "Lịch thi anh văn nhu cầu đợt 2 HK252 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=656117",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "644051",
+          "title": "Lịch kiểm tra giữa kỳ HK252 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=644051",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638283",
+          "title": "Lịch thi anh văn nhu cầu đợt 1 HK252 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=638283",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "598576",
+          "title": "Lịch thi cuối kỳ HK251 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=598576",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "585086",
+          "title": "Lịch kiểm tra giữa kỳ 251 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=585086",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "585082",
+          "title": "Lịch thi học kỳ 251 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=585082",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "201260",
+          "title": "Giấy chứng nhận vào phòng thi Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=201260",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "number": "2",
+      "title": "Đăng ký môn học",
+      "items": [
+        {
+          "id": "592918",
+          "title": "Dạnh sách môn học bậc thạc sĩ Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=592918",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "544943",
+          "title": "THÔNG BÁO Về việc Lịch học vụ năm học 2025-2026 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=544943",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "473849",
+          "title": "LỊCH HỌC VỤ HỌC KỲ DỰ THÍNH 243 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=473849",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "473848",
+          "title": "Danh sách môn học mở học kỳ 242 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=473848",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "400219",
+          "title": "LỊCH HỌC VỤ HỌC KỲ 242 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=400219",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "278299",
+          "title": "THÔNG BÁO V/v Gia hạn thời gian đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK241 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=278299",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "260836",
+          "title": "THÔNG BÁO V/v Đăng ký môn học HK 233 – Đợt 3 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=260836",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "255920",
+          "title": "THÔNG BÁO V/v Đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK241 (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=255920",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "255924",
+          "title": "THÔNG BÁO V/v Đăng ký môn học HK 233 – Đợt 2 – Lần 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=255924",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "247000",
+          "title": "LỊCH HỌC VỤ HỌC KỲ 241 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=247000",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "243148",
+          "title": "THÔNG BÁO V/v Điều chỉnh thời gian đăng ký môn học HK 233 - Đợt 2 (lần 2), Đợt 3 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=243148",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "212756",
+          "title": "THÔNG BÁO V/v Đăng ký môn học HK 233 - Đợt 2 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=212756",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "212724",
+          "title": "Môn học mở lớp và không mở lớp HK233",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=212724",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "201252",
+          "title": "THÔNG BÁO V/v Đăng ký môn học HK 233 - Đợt 1 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=201252",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "113255",
+          "title": "Môn học mở dự thính lộ trình 2 đợt 2 HK232",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=113255",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "80391",
+          "title": "LỊCH HỌC VỤ HỌC KỲ 233 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=80391",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "99",
+          "title": "THÔNG BÁO V/v Đăng ký môn học HK Chính + Dự thính Lộ trình 1 – HK232 (ĐỢT 2) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=99",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "103",
+          "title": "Các môn học mở và không mở HK232",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=103",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "107",
+          "title": "LỊCH HỌC VỤ HỌC KỲ 232 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=107",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "111",
+          "title": "Đăng ký các môn Anh văn khoá 2023 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=111",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "115",
+          "title": "Đăng ký các môn Giáo dục thể chất khoá 2023 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=115",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "119",
+          "title": "Bảng ký hiệu mã huỷ và lý do (cập nhật 03/8/2023) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=119",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "123",
+          "title": "THÔNG BÁO ĐĂNG KÝ MÔN HỌC HK 231 - ĐỢT 1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=123",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "127",
+          "title": "BẢNG KÝ HIỆU SINH VIÊN, NHÓM LỚP ĐĂNG KÝ NHU CẦU HỌC (ĐỢT 1) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=127",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "131",
+          "title": "LỊCH HỌC VỤ HỌC KỲ I NĂM HỌC 2023 - 2024 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=131",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "135",
+          "title": "Bảng tổng hợp quy định các chuẩn (Áp dụng cho kỳ đăng ký môn học tại HK223 ngày 01/03/2023) Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=135",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "139",
+          "title": "Hướng dẫn Đăng ký môn học",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=139",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "143",
+          "title": "Hướng dẫn đăng ký thể dục",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=143",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "15",
+      "number": "3",
+      "title": "Kế hoạch tổ chức Giáo dục Quốc phòng và An ninh",
+      "items": [
+        {
+          "id": "646548",
+          "title": "KẾ HOẠCH TIẾP NHẬN GDQPAN K461 Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=646548",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "645809",
+          "title": "Danh sách chia Đại đội - tiểu đội GDQP_AN đợt 2",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=645809",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "641480",
+          "title": "KẾ HOẠCH TIẾP NHẬN GDQPAN K460 Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=641480",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "640865",
+          "title": "Danh sách chia đại đội - tiểu đội GDQP_AN đợt 1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=640865",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608833",
+          "title": "Thông báo đầu khoá",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=608833",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "23",
+      "number": "4",
+      "title": "Học phí",
+      "items": [
+        {
+          "id": "147",
+          "title": "2023_Học phí GDQP",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=147",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "43",
+      "number": "5",
+      "title": "Chương trình Đào tạo",
+      "items": [
+        {
+          "id": "151",
+          "title": "DANH MỤC LOẠI TRỪ TỰ CHỌN TỰ DO Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=151",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "155",
+          "title": "DANH MỤC MÔN TRÙNG LẮP Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=155",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "159",
+          "title": "DANH MỤC MÔN TRÙNG LẮP ÁP DỤNG TỪ HK251 Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=159",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "163",
+          "title": "MÔN K2019, K2018 TƯƠNG ĐƯƠNG(TĐ)/THAY THẾ(TT) CHO K2018, K2017 VỀ TRƯỚC CHƯƠNG TRÌNH VIỆT PHÁP Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=163",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "167",
+          "title": "DANH SÁCH MÔN HỌC CTĐT TƯƠNG ĐƯƠNG/THAY THẾ CỦA CÁC KHOÁ Trang",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=167",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

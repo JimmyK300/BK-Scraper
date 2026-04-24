@@ -1,0 +1,388 @@
+{
+  "course": {
+    "id": 127357,
+    "fullname": "Digital Systems (Lab) (CO1024)_NGUYỄN THIÊN ÂN (CLC_HK251) [CC07,CC08,CC09,CC10]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=127357"
+  },
+  "sections": [
+    {
+      "id": "542582",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "582129",
+          "title": "Digital Systems (Lab) (CO1024)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=582129",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583888",
+          "title": "Course information",
+          "url": "https://lms.hcmut.edu.vn/mod/page/view.php?id=583888",
+          "url_kind": "direct",
+          "item_type": "page",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614318",
+          "title": "CO1024 CC07",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=614318",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614319",
+          "title": "CO1024 CC08",
+          "url": "#module-614319",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614320",
+          "title": "CO1024 CC09",
+          "url": "#module-614320",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "614321",
+          "title": "CO1024 CC10",
+          "url": "#module-614321",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "542581",
+      "number": "1",
+      "title": "Week 1",
+      "items": [
+        {
+          "id": "583896",
+          "title": "Preparation guidelines",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583896",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583897",
+          "title": "Netlist example",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583897",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583898",
+          "title": "DSKIT User Manual En",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583898",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "584007",
+          "title": "Logisim evolution download link",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=584007",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "542580",
+      "number": "2",
+      "title": "Week 2",
+      "items": [
+        {
+          "id": "583895",
+          "title": "Lab1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583895",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "586283",
+          "title": "Week 2 preparation submission CC07",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=586283",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583982",
+          "title": "Week 2 preparation submission CC08",
+          "url": "#module-583982",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "586285",
+          "title": "Week 2 preparation submission CC09",
+          "url": "#module-586285",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "586286",
+          "title": "Week 2 preparation submission CC10",
+          "url": "#module-586286",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "588827",
+          "title": "Exercise1 2020",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=588827",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "542579",
+      "number": "3",
+      "title": "Week 3",
+      "items": [
+        {
+          "id": "595048",
+          "title": "Custom library and circuit guide",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=595048",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "595068",
+          "title": "Lab2",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=595068",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "595016",
+          "title": "Lab 2 preparation submission CC07",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=595016",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "595013",
+          "title": "Lab 2 preparation submission CC08",
+          "url": "#module-595013",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "590242",
+          "title": "Lab 2 preparation submission CC09",
+          "url": "#module-590242",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "590243",
+          "title": "Lab 2 preparation submission CC10",
+          "url": "#module-590243",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "543028",
+      "number": "4",
+      "title": "Week 4",
+      "items": [
+        {
+          "id": "595069",
+          "title": "Lab3",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=595069",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601038",
+          "title": "Lab 3 preparation submission CC07",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=601038",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601039",
+          "title": "Lab 3 preparation submission CC08",
+          "url": "#module-601039",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601040",
+          "title": "Lab 3 preparation submission CC09",
+          "url": "#module-601040",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601041",
+          "title": "Lab 3 preparation submission CC10",
+          "url": "#module-601041",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "543029",
+      "number": "5",
+      "title": "Week 5",
+      "items": [
+        {
+          "id": "601274",
+          "title": "Lab4",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=601274",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601275",
+          "title": "Lab 4 preparation submission CC07",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=601275",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601276",
+          "title": "Lab 4 preparation submission CC08",
+          "url": "#module-601276",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601277",
+          "title": "Lab 4 preparation submission CC09",
+          "url": "#module-601277",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601278",
+          "title": "Lab 4 preparation submission CC10",
+          "url": "#module-601278",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "543030",
+      "number": "6",
+      "title": "Week 6",
+      "items": [
+        {
+          "id": "608512",
+          "title": "Lab exam CC07",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=608512",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608338",
+          "title": "Lab exam CC08",
+          "url": "#module-608338",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "607421",
+          "title": "Lab exam CC09",
+          "url": "#module-607421",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "607422",
+          "title": "Lab exam CC10",
+          "url": "#module-607422",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

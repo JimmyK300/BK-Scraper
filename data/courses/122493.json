@@ -1,0 +1,273 @@
+{
+  "course": {
+    "id": 122493,
+    "fullname": "Calculus 1 (MT1003)_LÊ THÁI THANH (CLC_HK251) [CC08,CC16,CC17,CC21]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=122493"
+  },
+  "sections": [
+    {
+      "id": "518417",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "547948",
+          "title": "Calculus 1 (MT1003)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=547948",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "570188",
+          "title": "Course Outline",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=570188",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "585912",
+          "title": "Review Questions for MidTerm",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=585912",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "588481",
+          "title": "MidTerm Exam 2024",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=588481",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "599331",
+          "title": "[251]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Calculus 1 (MT1003)_LÊ THÁI THANH (CLC_HK251) [CC08,CC16,CC17,CC21]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=599331",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "606444",
+          "title": "Review Questions for Final Exam",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=606444",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "606485",
+          "title": "Final Exam of Semester 241",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=606485",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "544845",
+      "number": "1",
+      "title": "GROUPS FOR ASSIGNMENTS",
+      "items": [
+        {
+          "id": "587621",
+          "title": "Groups of CC08",
+          "url": "#module-587621",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587622",
+          "title": "Groups of CC16",
+          "url": "#module-587622",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587623",
+          "title": "Groups of CC17",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=587623",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587625",
+          "title": "Groups of CC21",
+          "url": "#module-587625",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "590683",
+          "title": "ASSIGNMENT - Part I",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=590683",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "593936",
+          "title": "Requires for Report.",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=593936",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "593941",
+          "title": "REPORT SUBMIT - Part 1",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=593941",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "604332",
+          "title": "Requies for Report (Part 2)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=604332",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "604335",
+          "title": "REPORT SUBMIT - PART 2",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=604335",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "518416",
+      "number": "2",
+      "title": "Chapter 1: FUNCTIONS OF ONE VARIABLE",
+      "items": [
+        {
+          "id": "570192",
+          "title": "Slides of Lecture",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=570192",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "570751",
+          "title": "Exercises of Chapter 1",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=570751",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "518415",
+      "number": "3",
+      "title": "Chapter 2: DERVATIVES",
+      "items": [
+        {
+          "id": "583712",
+          "title": "Slides of Lecture",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583712",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "583713",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=583713",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "518414",
+      "number": "4",
+      "title": "Chapter 3: INTEGRALS",
+      "items": [
+        {
+          "id": "591097",
+          "title": "Slides of Lectures",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=591097",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "591098",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=591098",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "537913",
+      "number": "5",
+      "title": "Chapter 4: DIFFERENTIAL EQUATIONS",
+      "items": [
+        {
+          "id": "601475",
+          "title": "Slides of Lectures",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=601475",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601476",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=601476",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

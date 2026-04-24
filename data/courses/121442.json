@@ -1,0 +1,158 @@
+{
+  "course": {
+    "id": 121442,
+    "fullname": "Introduction to Computing (Practice) (CO1006)_NGUYỄN MINH TÂM (CLC_HK251) [CC03,CC05,CC06]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=121442"
+  },
+  "sections": [
+    {
+      "id": "514213",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "546897",
+          "title": "Introduction to Computing (Practice) (CO1006)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=546897",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609154",
+          "title": "Final Lab Scores",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=609154",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "514212",
+      "number": "1",
+      "title": "Day 1",
+      "items": [
+        {
+          "id": "587608",
+          "title": "Lab 1 Description",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=587608",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587610",
+          "title": "Lab 1 Submission",
+          "url": "#module-587610",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "587633",
+          "title": "Lab 2",
+          "url": "#module-587633",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "514211",
+      "number": "2",
+      "title": "Day 2",
+      "items": [
+        {
+          "id": "595753",
+          "title": "Lab 3",
+          "url": "#module-595753",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "595827",
+          "title": "Lab 4",
+          "url": "#module-595827",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "514210",
+      "number": "3",
+      "title": "Day 3",
+      "items": [
+        {
+          "id": "601736",
+          "title": "Lab 5 Description",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=601736",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "601739",
+          "title": "Lab 5 Submission",
+          "url": "#module-601739",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "552310",
+      "number": "4",
+      "title": "Day 4",
+      "items": [
+        {
+          "id": "605129",
+          "title": "Harmony Coding",
+          "url": "#module-605129",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "605136",
+          "title": "Lab 6 Description",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=605136",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "605137",
+          "title": "Lab 6 Submission",
+          "url": "#module-605137",
+          "url_kind": "module_anchor",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

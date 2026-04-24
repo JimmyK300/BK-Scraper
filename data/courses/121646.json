@@ -1,0 +1,265 @@
+{
+  "course": {
+    "id": 121646,
+    "fullname": "General Physics 1 (Exc) (PH1004)_NGUYỄN XUÂN THANH TRÂM (CLC_HK251) [CC01,CC02,CC03,CC11,CC26,CC29,CC30,CC38]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=121646"
+  },
+  "sections": [
+    {
+      "id": "515029",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "547101",
+          "title": "General Physics 1 (Exc) (PH1004)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=547101",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556544",
+          "title": "Topic for Matlab Assignment + Group members. Submission date 25 Nov 2025",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=556544",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556545",
+          "title": "Matlab",
+          "url": "https://lms.hcmut.edu.vn/mod/assign/view.php?id=556545",
+          "url_kind": "direct",
+          "item_type": "assign",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "577785",
+          "title": "Group Matlab",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=577785",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "515028",
+      "number": "1",
+      "title": "Mock test and extra exercise",
+      "items": [
+        {
+          "id": "556546",
+          "title": "Midterm",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556546",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556547",
+          "title": "trial exam",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556547",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556548",
+          "title": "Extra Exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=556548",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "515027",
+      "number": "2",
+      "title": "chapter 1",
+      "items": [
+        {
+          "id": "556549",
+          "title": "full chapter 1 exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556549",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "515026",
+      "number": "3",
+      "title": "chapter 2",
+      "items": [
+        {
+          "id": "556551",
+          "title": "full chapter 2 exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556551",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "534717",
+      "number": "4",
+      "title": "Homework chapter 1 and chapter 2",
+      "items": [
+        {
+          "id": "556557",
+          "title": "Why do you feel lighter at the top of a ferris wheel",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=556557",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556554",
+          "title": "Homework c1 c2",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=556554",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "534718",
+      "number": "5",
+      "title": "Chapter 3",
+      "items": [
+        {
+          "id": "556555",
+          "title": "full chapter 3 exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556555",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556559",
+          "title": "Homework for chapter 3",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=556559",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "534719",
+      "number": "6",
+      "title": "Chapter 4",
+      "items": [
+        {
+          "id": "556563",
+          "title": "full thermodynamics exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556563",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556564",
+          "title": "homework chapter Thermodynamics",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=556564",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "534720",
+      "number": "7",
+      "title": "Chapter 5",
+      "items": [
+        {
+          "id": "556567",
+          "title": "Homework for Electric chapter",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=556567",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556568",
+          "title": "Chapter 5 Exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556568",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "534721",
+      "number": "8",
+      "title": "Chapter 6",
+      "items": [
+        {
+          "id": "556572",
+          "title": "Full Magnetic exercise",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=556572",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "556573",
+          "title": "Review 1",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=556573",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "534722",
+      "number": "9",
+      "title": "Topic 9",
+      "items": [
+        {
+          "id": "556574",
+          "title": "trial exam",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=556574",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

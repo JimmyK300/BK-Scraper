@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "rootDir": "Ref-js/src",
+    "outDir": "Ref-js/dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["Ref-js/src/**/*.ts"],
+  "exclude": ["Ref-js/node_modules", "Ref-js/dist", "data", ".cache"]
+}

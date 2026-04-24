@@ -1,0 +1,105 @@
+{
+  "course": {
+    "id": 129240,
+    "fullname": "Self-Management Skills (SK1003)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=129240"
+  },
+  "sections": [
+    {
+      "id": "553864",
+      "number": "0",
+      "title": "General",
+      "items": []
+    },
+    {
+      "id": "574072",
+      "number": "1",
+      "title": "Course Information",
+      "items": [
+        {
+          "id": "621134",
+          "title": "SK1003 slide",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=621134",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638070",
+          "title": "SK1003 Course Information",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=638070",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638121",
+          "title": "SK1003 Course Materials",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=638121",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "553862",
+      "number": "2",
+      "title": "Quiz lớp tiếng Việt có thời khóa biểu tuần 10- tuần 18",
+      "items": [
+        {
+          "id": "638069",
+          "title": "Quiz 40% - tính điểm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=638069",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "638057",
+          "title": "Quiz ôn tập - không tính điểm",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=638057",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "553863",
+      "number": "3",
+      "title": "Quiz for English class",
+      "items": [
+        {
+          "id": "618928",
+          "title": "Quiz midterm 40% grade",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=618928",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "618924",
+          "title": "Quiz Review",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=618924",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

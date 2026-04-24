@@ -1,0 +1,185 @@
+{
+  "course": {
+    "id": 5211,
+    "fullname": "Discrete Structures for Computing (CO1007)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=5211"
+  },
+  "sections": [
+    {
+      "id": "4099",
+      "number": "0",
+      "title": "Video",
+      "items": [
+        {
+          "id": "282207",
+          "title": "0. Introduction",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=282207",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545353",
+          "title": "Chapter 1: LOGIC",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=545353",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545354",
+          "title": "Chapter 2: Logic (cont.)",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=545354",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545355",
+          "title": "Chapter 3: Proof",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=545355",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "506111",
+      "number": "1",
+      "title": "Blended Material",
+      "items": [
+        {
+          "id": "545342",
+          "title": "Slides",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=545342",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545343",
+          "title": "Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=545343",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545344",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=545344",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545345",
+          "title": "Book",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=545345",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "255064",
+          "title": "Old exam papers",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=255064",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545351",
+          "title": "Quiz",
+          "url": "#module-545351",
+          "url_kind": "module_anchor",
+          "item_type": "label",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545346",
+          "title": "Logic and Proof",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=545346",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545347",
+          "title": "Set, Fuction, Relation",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=545347",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545348",
+          "title": "Counting and Probability",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=545348",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "545349",
+          "title": "Graph and Tree",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=545349",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "548627",
+      "number": "2",
+      "title": "Assignment 251",
+      "items": []
+    },
+    {
+      "id": "506048",
+      "number": "3",
+      "title": "Assignment 243 (DEADLINE 17/08/2025)",
+      "items": []
+    },
+    {
+      "id": "495477",
+      "number": "4",
+      "title": "Assignment 242 (DEADLINE UPDATED 22/06/2025)",
+      "items": []
+    },
+    {
+      "id": "4087",
+      "number": "5",
+      "title": "Assignment 241",
+      "items": []
+    },
+    {
+      "id": "227636",
+      "number": "6",
+      "title": "Assigment 232",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

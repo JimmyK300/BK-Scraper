@@ -1,0 +1,76 @@
+{
+  "course": {
+    "id": 126670,
+    "fullname": "Lớp Chủ nhiệm (LCN)_NGUYỄN QUỐC MINH (CTTA_HK251)",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=126670"
+  },
+  "sections": [
+    {
+      "id": "537523",
+      "number": "0",
+      "title": "Chung",
+      "items": [
+        {
+          "id": "608480",
+          "title": "Sinh hoạt lớp với GVCN 10/12/2015 Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=608480",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608479",
+          "title": "Sinh Hoạt lớp với GVCN 02/11/2025 Thư mục",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=608479",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "620216",
+          "title": "BM7",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=620216",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "568423",
+          "title": "Thông báo Diễn đàn",
+          "url": "https://lms.hcmut.edu.vn/mod/forum/view.php?id=568423",
+          "url_kind": "direct",
+          "item_type": "forum",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "537522",
+      "number": "1",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "537521",
+      "number": "2",
+      "title": "New section",
+      "items": []
+    },
+    {
+      "id": "537520",
+      "number": "3",
+      "title": "New section",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

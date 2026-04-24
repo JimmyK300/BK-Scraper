@@ -1,0 +1,77 @@
+{
+  "course": {
+    "id": 6507,
+    "fullname": "General Physics 1 (PH1003)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=6507"
+  },
+  "sections": [
+    {
+      "id": "9283",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "595498",
+          "title": "Answer to Midterm test - Semester 251",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=595498",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "609180",
+          "title": "Answers to the Final exam - Semester 251",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=609180",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "9279",
+      "number": "1",
+      "title": "Introductory quiz of the course Physics 1",
+      "items": [
+        {
+          "id": "40859",
+          "title": "Online lecture notes of Prof Tran Thi Thu Hanh",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=40859",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "362165",
+          "title": "Introductory",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=362165",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "9275",
+      "number": "2",
+      "title": "Topic 2",
+      "items": []
+    },
+    {
+      "id": "9271",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,49 @@
+{
+  "course": {
+    "id": 7919,
+    "fullname": "General Physics Labs (PH1007)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=7919"
+  },
+  "sections": [
+    {
+      "id": "14931",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "51879",
+          "title": "Link videos",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=51879",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "14927",
+      "number": "1",
+      "title": "Topic 1",
+      "items": []
+    },
+    {
+      "id": "14923",
+      "number": "2",
+      "title": "Topic 2",
+      "items": []
+    },
+    {
+      "id": "14919",
+      "number": "3",
+      "title": "Topic 3",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

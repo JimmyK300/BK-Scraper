@@ -1,0 +1,89 @@
+{
+  "course": {
+    "id": 63743,
+    "fullname": "Introduction to Computing (Practice) (CO1006)_HK251_CC_ALL",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=63743"
+  },
+  "sections": [
+    {
+      "id": "248427",
+      "number": "0",
+      "title": "General",
+      "items": []
+    },
+    {
+      "id": "248423",
+      "number": "1",
+      "title": "Assignment 1",
+      "items": [
+        {
+          "id": "596087",
+          "title": "Assignment 1 Specification (updated 10/11)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=596087",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "596026",
+          "title": "Assignment 1 - Mock test",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=596026",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "596127",
+          "title": "Assignment 1 - Final submission",
+          "url": "#module-596127",
+          "url_kind": "module_anchor",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "603437",
+          "title": "Assignment 1 Score",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=603437",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "248415",
+      "number": "2",
+      "title": "Assignment 2",
+      "items": [
+        {
+          "id": "602873",
+          "title": "Assignment 2 Specification",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=602873",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "602864",
+          "title": "Assignment 2 Submission",
+          "url": "https://lms.hcmut.edu.vn/mod/quiz/view.php?id=602864",
+          "url_kind": "direct",
+          "item_type": "quiz",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}

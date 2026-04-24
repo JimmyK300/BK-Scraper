@@ -1,0 +1,351 @@
+{
+  "course": {
+    "id": 132842,
+    "fullname": "Calculus 2 (MT1005)_LÊ THÁI THANH (CLC_HK252) [CC03,CC04,CC06,CC07]",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=132842"
+  },
+  "sections": [
+    {
+      "id": "568275",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "612375",
+          "title": "Calculus 2 (MT1005)_Video",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=612375",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "618963",
+          "title": "Course Outline",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=618963",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "626967",
+          "title": "Course Evaluation",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=626967",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636968",
+          "title": "Group List of CC06 (Final 31-01-26)",
+          "url": "#module-636968",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636962",
+          "title": "Group List of CC07 (Final 31-01-26)",
+          "url": "#module-636962",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636982",
+          "title": "Group Lists of CC04 (Final 31-01-26)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=636982",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636983",
+          "title": "Group Lists of CC03 (Final 31-01-26)",
+          "url": "#module-636983",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "651080",
+          "title": "[252]_KHẢO SÁT HỌC PHẦN/ STUDENT SATISFACTION SURVEY ON COURSE Calculus 2 (MT1005)_LÊ THÁI THANH (CLC_HK252) [CC03,CC04,CC06,CC07]",
+          "url": "https://lms.hcmut.edu.vn/mod/questionnaire/view.php?id=651080",
+          "url_kind": "direct",
+          "item_type": "questionnaire",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "568274",
+      "number": "1",
+      "title": "CHAPTER 1",
+      "items": [
+        {
+          "id": "618965",
+          "title": "Functions of Several Variables",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=618965",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "618967",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=618967",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636924",
+          "title": "Solved Exercises of Chapter 1 (Updated)",
+          "url": "#module-636924",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636925",
+          "title": "Solved Exercises of Chapter 1 (Updated)",
+          "url": "#module-636925",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636926",
+          "title": "Solved Exercises of Chapter 1 (Updated)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=636926",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636927",
+          "title": "Solved Exercises of Chapter 1 (Updated)",
+          "url": "#module-636927",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "568273",
+      "number": "2",
+      "title": "CHAPTER 2",
+      "items": [
+        {
+          "id": "636963",
+          "title": "Multiple Integrals",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=636963",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "636964",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=636964",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "643558",
+          "title": "Solved Exercises of Chapter 2 (updated)",
+          "url": "#module-643558",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "643559",
+          "title": "Solved Exercises of Chapter 2 (updated)",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=643559",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "643560",
+          "title": "Solved Exercises of Chapter 2 (updated)",
+          "url": "#module-643560",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "643561",
+          "title": "Solved Exercises of Chapter 2 (updated)",
+          "url": "#module-643561",
+          "url_kind": "module_anchor",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "646163",
+          "title": "Change of Variables in Multiple Integrals",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=646163",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "588311",
+      "number": "3",
+      "title": "FOR MIDTERM",
+      "items": [
+        {
+          "id": "646815",
+          "title": "Review MidTerm",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=646815",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "647871",
+          "title": "Sample MidTerm Exam",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=647871",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "654992",
+          "title": "Solution of Review of MidTerm",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=654992",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "652450",
+          "title": "Link for CC03",
+          "url": "#module-652450",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "652451",
+          "title": "Link for CC04",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=652451",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "652452",
+          "title": "Link for CC06",
+          "url": "#module-652452",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "652453",
+          "title": "Link for CC07",
+          "url": "#module-652453",
+          "url_kind": "module_anchor",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "568272",
+      "number": "4",
+      "title": "CHAPTER 3",
+      "items": [
+        {
+          "id": "648706",
+          "title": "Line and Surface Integrals",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=648706",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "648707",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=648707",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "574073",
+      "number": "5",
+      "title": "CHAPTER 4",
+      "items": [
+        {
+          "id": "649084",
+          "title": "Series",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=649084",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "649085",
+          "title": "Exercises",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=649085",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "588312",
+      "number": "6",
+      "title": "FOR FINAL EXAM",
+      "items": []
+    }
+  ],
+  "parse_warnings": []
+}

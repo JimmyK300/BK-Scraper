@@ -1,0 +1,159 @@
+{
+  "course": {
+    "id": 10879,
+    "fullname": "Calculus 1 (MT1003)_Video",
+    "course_code": "",
+    "lecturer": "",
+    "education_program": "",
+    "semester": "",
+    "group_classes": [],
+    "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=10879"
+  },
+  "sections": [
+    {
+      "id": "26771",
+      "number": "0",
+      "title": "General",
+      "items": [
+        {
+          "id": "62991",
+          "title": "Course Syllabus",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=62991",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "62951",
+          "title": "Introduction",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=62951",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "256929",
+          "title": "Final exam",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=256929",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "459032",
+          "title": "Midterm 241",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=459032",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "493876",
+          "title": "Final exam 241",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=493876",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "593832",
+          "title": "Midterm Exam_Cal 1_251",
+          "url": "https://lms.hcmut.edu.vn/mod/folder/view.php?id=593832",
+          "url_kind": "direct",
+          "item_type": "folder",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608877",
+          "title": "Revised Answer Key for the Final Exam",
+          "url": "https://lms.hcmut.edu.vn/mod/feedback/view.php?id=608877",
+          "url_kind": "direct",
+          "item_type": "feedback",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "608879",
+          "title": "Revised Answer Key for the Calculus 1 Exam",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=608879",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "26767",
+      "number": "1",
+      "title": "Topic 1",
+      "items": []
+    },
+    {
+      "id": "26763",
+      "number": "2",
+      "title": "Chapter 1: Limit and continuity",
+      "items": [
+        {
+          "id": "113775",
+          "title": "Limit",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=113775",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    },
+    {
+      "id": "26759",
+      "number": "3",
+      "title": "Chapter 6: ODEs",
+      "items": [
+        {
+          "id": "113779",
+          "title": "ODEs of order 1",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=113779",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "113783",
+          "title": "ODEs of order 2",
+          "url": "https://lms.hcmut.edu.vn/mod/url/view.php?id=113783",
+          "url_kind": "direct",
+          "item_type": "url",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "544645",
+          "title": "Midterm 243",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=544645",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        },
+        {
+          "id": "566092",
+          "title": "Final243",
+          "url": "https://lms.hcmut.edu.vn/mod/resource/view.php?id=566092",
+          "url_kind": "direct",
+          "item_type": "resource",
+          "due_raw": null,
+          "due_at": null
+        }
+      ]
+    }
+  ],
+  "parse_warnings": []
+}
