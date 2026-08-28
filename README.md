@@ -1,21 +1,119 @@
 # BK-LMS Scraper
 
-**Rust · Backend · CLI**
+Local-first exporter for **HCMUT BK-LMS**.
 
-BK-LMS Scraper is a personal Rust backend project for collecting and organizing course data from the HCMUT LMS.
+The project is no longer a Rust-learning exercise. v0 has one concrete job:
 
-The goal is to build a lightweight system that can scrape course content, normalize it into local snapshots, detect changes such as new materials or updated deadlines, and send notifications in a format that is useful to me.
+> Log into BK-LMS in a local browser, crawl a course's useful Moodle content, and export a durable retrieval snapshot into Personal-Knowledge-Vault.
 
-Longer term, I want this project to become a small local or cloud-based agent for course tracking, deadline awareness, and repetitive LMS workflow automation.
+The old Rust code remains in the repository as legacy/reference material, but the active implementation is Python.
 
-## Current Rust Backend Focus
+## What v0 does
 
-I’m currently building toward Rust backend development.
+Given a course such as:
 
-My previous backend experience is with NestJS, Prisma, and Postgres, so I already understand API structure, database modeling, authentication flow, and backend project organization.
+```text
+https://lms.hcmut.edu.vn/course/view.php?id=11267
+```
 
-Right now, I’m focusing on Rust backend fundamentals: Axum, SQLx, async Rust, ownership and borrowing, error handling, JWT authentication, CLI tooling, and maintainable service code.
+it:
 
-This project is my practical learning ground for applying those concepts to a real workflow: scraping LMS data, storing course snapshots, detecting changes, and building useful notifications.
+- opens Chromium with a **persistent local profile**;
+- lets you complete HCMUT/SSO login yourself when needed;
+- extracts the course section/activity map;
+- recursively follows bounded, content-bearing Moodle pages;
+- downloads LMS-hosted files such as PDFs, slides, documents, archives, and media;
+- turns useful HTML page bodies into Markdown;
+- records external links without crawling the external site;
+- writes everything into `PKV/lms/courses/<course-id>/`.
 
-Current goal: become useful in real backend work by building practical systems, getting feedback, and improving through project-based learning.
+It deliberately does **not** implement syncing, diffs, notifications, scheduling, databases, or AI indexing yet.
+
+It also does not recursively mirror forum discussions, quiz attempts, or submission workflows.
+
+## Security model
+
+Do not put your HCMUT password in code, prompts, `.env`, or this repository.
+
+The crawler launches a browser and you log in yourself. Chromium keeps the authenticated session in `.bk-lms-profile/`, which is git-ignored. The generated PKV export contains course content but no copied browser cookie store.
+
+If your PKV is synced to GitHub, make sure its visibility and your rights to store course materials there are appropriate.
+
+## Install
+
+Python 3.11+:
+
+```bash
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# macOS/Linux:
+# source .venv/bin/activate
+
+pip install -e .
+playwright install chromium
+```
+
+Optional tests:
+
+```bash
+pip install -e ".[dev]"
+pytest
+```
+
+## Export course 11267
+
+If your PKV is at the historical Windows location, this is enough:
+
+```bash
+bk-lms crawl 11267
+```
+
+Otherwise point to it explicitly:
+
+```bash
+bk-lms crawl 11267 --pkv /path/to/Personal-Knowledge-Vault
+```
+
+or set:
+
+```bash
+PKV_PATH=/path/to/Personal-Knowledge-Vault
+```
+
+On the first run, Chromium opens. Complete the university login there, then return to the terminal and press Enter. The browser profile is reused later.
+
+Once a working session exists, unattended/headless retrieval is possible:
+
+```bash
+bk-lms crawl 11267 --headless
+```
+
+v0 overwrites the course export in place. That is intentional: it is a snapshot exporter, not a sync/history engine.
+
+## Output
+
+```text
+Personal-Knowledge-Vault/
+  lms/
+    courses/
+      11267/
+        index.md
+        manifest.jsonl
+        raw/
+          course.html
+        pages/
+          ...
+        files/
+          ...
+```
+
+`index.md` is the human/AI entry point. `manifest.jsonl` is the machine-readable map containing original URLs, local paths, item type, section, content type, and SHA-256 hashes.
+
+This gives future agents a small durable surface to query before they ever need to touch the LMS.
+
+## Crawl boundary
+
+The crawler does **not** blindly recurse through the entire Moodle site.
+
+It follows selected content routes (`assign`, `book`, `folder`, `lesson`, `page`, `quiz`, `resource`, `url`, `wiki`) and LMS-hosted files. Global navigation, profiles, dashboards, other courses, and external sites are not traversed. A `--max-pages` cap adds a second guardrail.
