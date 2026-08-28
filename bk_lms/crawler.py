@@ -62,6 +62,7 @@ class Record:
     section: str = ""
     item_type: str = ""
     relation: str = ""
+    resolved_url: str | None = None
     local_path: str | None = None
     content_type: str | None = None
     sha256: str | None = None
@@ -96,7 +97,6 @@ def sanitize_filename(value: str, fallback: str = "item") -> str:
 
 def canonical_url(url: str) -> str:
     parsed = urlparse(url)
-    # Fragments do not affect server content and create needless duplicates.
     return parsed._replace(fragment="").geturl()
 
 
@@ -107,11 +107,7 @@ def is_lms_url(url: str) -> bool:
 
 def should_follow_html(url: str) -> bool:
     parsed = urlparse(url)
-    if parsed.netloc != "lms.hcmut.edu.vn":
-        return False
-    if FOLLOW_PATH_RE.match(parsed.path):
-        return True
-    return False
+    return parsed.netloc == "lms.hcmut.edu.vn" and bool(FOLLOW_PATH_RE.match(parsed.path))
 
 
 def looks_like_file_url(url: str) -> bool:
@@ -171,9 +167,7 @@ def parse_course_page(html: str) -> tuple[str, list[CourseActivity]]:
                 continue
             seen_nodes.add(key)
 
-            classes = activity.get("class", [])
-            item_type = activity_type(classes)
-
+            item_type = activity_type(activity.get("class", []))
             link = activity.select_one(".activityname a[href], a.aalink[href], a[href]")
             url = urljoin(LMS_BASE, link["href"]) if link and link.get("href") else None
             title_node = activity.select_one(".instancename, [data-activityname]")
@@ -191,14 +185,13 @@ def parse_course_page(html: str) -> tuple[str, list[CourseActivity]]:
             if not item_title:
                 item_title = f"Untitled {item_type}"
 
-            inline_text = normalized_text(activity) if url is None else ""
             activities.append(
                 CourseActivity(
                     title=item_title,
                     section=section_title,
                     item_type=item_type,
                     url=canonical_url(url) if url else None,
-                    inline_text=inline_text,
+                    inline_text=normalized_text(activity) if url is None else "",
                 )
             )
     return title, activities
@@ -369,15 +362,11 @@ class CourseCrawler:
             content_type = response.headers.get("content-type", "").lower()
             body = await response.body()
             if "text/html" in content_type or "application/xhtml+xml" in content_type:
-                record, discovered = self._save_html(
-                    final_url, body, seed, content_type
-                )
+                record, discovered = self._save_html(final_url, body, seed, content_type)
                 self.records.append(record)
                 queue.extend(discovered)
             else:
-                self.records.append(
-                    self._save_file(final_url, body, seed, response)
-                )
+                self.records.append(self._save_file(final_url, body, seed, response))
 
     async def _fetch_internal(
         self, url: str
@@ -435,8 +424,7 @@ class CourseCrawler:
         digest = hashlib.sha256(body).hexdigest()
         filename = sanitize_filename(seed.title or page_title)
         rel_path = Path("pages") / f"{filename}-{digest[:8]}.md"
-        full_path = self.output_dir / rel_path
-        full_path.write_text(
+        (self.output_dir / rel_path).write_text(
             "\n".join(
                 [
                     f"# {page_title or seed.title}",
@@ -483,11 +471,12 @@ class CourseCrawler:
         return (
             Record(
                 kind="page",
-                url=url,
+                url=seed.url,
                 title=page_title or seed.title,
                 section=seed.section,
                 item_type=seed.item_type,
                 relation=seed.relation,
+                resolved_url=url if url != seed.url else None,
                 local_path=rel_path.as_posix(),
                 content_type=content_type,
                 sha256=digest,
@@ -517,11 +506,12 @@ class CourseCrawler:
         (self.output_dir / rel_path).write_bytes(body)
         return Record(
             kind="file",
-            url=url,
+            url=seed.url,
             title=seed.title or name,
             section=seed.section,
             item_type=seed.item_type,
             relation=seed.relation,
+            resolved_url=url if url != seed.url else None,
             local_path=rel_path.as_posix(),
             content_type=content_type,
             sha256=digest,
@@ -603,8 +593,7 @@ def default_pkv_root() -> Path:
     if os.name == "nt" and windows.exists():
         return windows
 
-    sibling = Path("../Personal-Knowledge-Vault")
-    return sibling
+    return Path("../Personal-Knowledge-Vault")
 
 
 async def crawl_course(
