@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bk-lms-scraper"
+version = "0.1.0"
+description = "Local-first HCMUT BK-LMS course exporter"
+requires-python = ">=3.11"
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "markdownify>=0.13",
+  "playwright>=1.49",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+bk-lms = "bk_lms.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["bk_lms"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
