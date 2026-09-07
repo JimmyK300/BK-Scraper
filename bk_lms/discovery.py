@@ -7,8 +7,9 @@ from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlparse
 
 from bs4 import BeautifulSoup
-from playwright.async_api import async_playwright
+from playwright.async_api import BrowserContext
 
+from .auth import authenticated_session
 from .crawler import DEFAULT_PROFILE_DIR, LMS_BASE, crawl_course, default_pkv_root
 
 
@@ -130,38 +131,60 @@ def select_semester_courses(
     return [course for course in courses if token in course.title.upper()]
 
 
+async def discover_courses_with_context(context: BrowserContext) -> list[CourseLink]:
+    page = context.pages[0] if context.pages else await context.new_page()
+    await page.goto(
+        f"{LMS_BASE}/my/courses.php",
+        wait_until="commit",
+        timeout=60_000,
+    )
+    try:
+        await page.wait_for_load_state("domcontentloaded", timeout=20_000)
+    except Exception:
+        pass
+    if urlparse(page.url).path.startswith("/login/") or urlparse(
+        page.url
+    ).netloc.endswith("sso.hcmut.edu.vn"):
+        raise RuntimeError(
+            "BK-LMS profile is not authenticated. Authenticate before course discovery."
+        )
+    html = await page.content()
+    sesskey = extract_sesskey(html)
+    service_url = (
+        f"{LMS_BASE}/lib/ajax/service.php?sesskey={sesskey}"
+        "&info=core_course_get_enrolled_courses_by_timeline_classification"
+    )
+    response = await context.request.post(
+        service_url,
+        headers={
+            "Content-Type": "application/json",
+            "Referer": f"{LMS_BASE}/my/courses.php",
+        },
+        data=json.dumps(courses_payload()),
+    )
+    if response.ok:
+        try:
+            return parse_courses_ajax(await response.json())
+        except RuntimeError:
+            pass
+    fallback = parse_dashboard_courses(html)
+    if fallback:
+        return fallback
+    raise RuntimeError(
+        f"Moodle courses AJAX returned HTTP {response.status} and no course links were found in HTML."
+    )
+
+
 async def discover_courses(
     *,
     profile_dir: Path = DEFAULT_PROFILE_DIR,
     headless: bool = True,
+    context: BrowserContext | None = None,
 ) -> list[CourseLink]:
-    async with async_playwright() as p:
-        context = await p.chromium.launch_persistent_context(
-            str(profile_dir),
-            headless=headless,
-            accept_downloads=False,
-        )
-        try:
-            page = context.pages[0] if context.pages else await context.new_page()
-            await page.goto(f"{LMS_BASE}/my/courses.php", wait_until="domcontentloaded")
-            if urlparse(page.url).path.startswith("/login/"):
-                raise RuntimeError(
-                    "BK-LMS profile is not authenticated. Authenticate before course discovery."
-                )
-            html = await page.content()
-            sesskey = extract_sesskey(html)
-            service_url = (
-                f"{LMS_BASE}/lib/ajax/service.php?sesskey={sesskey}"
-                "&info=core_course_get_enrolled_courses_by_timeline_classification"
-            )
-            response = await context.request.post(service_url, data=courses_payload())
-            if not response.ok:
-                raise RuntimeError(
-                    f"Moodle courses AJAX returned HTTP {response.status}"
-                )
-            return parse_courses_ajax(await response.json())
-        finally:
-            await context.close()
+    if context is not None:
+        return await discover_courses_with_context(context)
+    async with authenticated_session(profile_dir, headless=headless) as session:
+        return await discover_courses_with_context(session)
 
 
 async def crawl_semester(
@@ -170,11 +193,24 @@ async def crawl_semester(
     pkv_root: Path | None = None,
     profile_dir: Path = DEFAULT_PROFILE_DIR,
     max_pages: int = 200,
+    headless: bool = True,
+    context: BrowserContext | None = None,
 ) -> Path:
     """Discover and export every enrolled course whose fullname contains semester_code."""
+    if context is None:
+        async with authenticated_session(profile_dir, headless=headless) as session:
+            return await crawl_semester(
+                semester_code,
+                pkv_root=pkv_root,
+                profile_dir=profile_dir,
+                max_pages=max_pages,
+                headless=headless,
+                context=session,
+            )
+
     root = (pkv_root or default_pkv_root()).expanduser()
     courses = select_semester_courses(
-        await discover_courses(profile_dir=profile_dir, headless=True),
+        await discover_courses_with_context(context),
         semester_code,
     )
     if not courses:
@@ -185,14 +221,31 @@ async def crawl_semester(
     results: list[dict[str, str]] = []
     for index, course in enumerate(courses, start=1):
         print(f"[{index}/{len(courses)}] {course.title} ({course.course_id})")
-        output = await crawl_course(
-            course.url,
-            pkv_root=root,
-            profile_dir=profile_dir,
-            headless=True,
-            max_pages=max_pages,
-        )
-        results.append({**asdict(course), "index_path": str(output)})
+        try:
+            output = await crawl_course(
+                course.url,
+                pkv_root=root,
+                profile_dir=profile_dir,
+                headless=headless,
+                max_pages=max_pages,
+                context=context,
+            )
+            results.append(
+                {
+                    **asdict(course),
+                    "index_path": str(output),
+                    "status": "ok",
+                }
+            )
+        except Exception as exc:
+            print(f"  failed: {exc}")
+            results.append(
+                {
+                    **asdict(course),
+                    "status": "error",
+                    "error": str(exc),
+                }
+            )
 
     semester_dir = root / "lms" / "semesters" / semester_code.upper()
     semester_dir.mkdir(parents=True, exist_ok=True)
@@ -201,6 +254,7 @@ async def crawl_semester(
             {
                 "semester": semester_code.upper(),
                 "course_count": len(courses),
+                "ok_count": sum(1 for item in results if item.get("status") == "ok"),
                 "courses": results,
             },
             ensure_ascii=False,
@@ -213,13 +267,19 @@ async def crawl_semester(
     lines = [
         f"# BK-LMS {semester_code.upper()}",
         "",
-        f"Courses exported: {len(courses)}",
+        f"Courses discovered: {len(courses)}",
+        f"Courses exported: {sum(1 for item in results if item.get('status') == 'ok')}",
         "",
     ]
-    for course in courses:
-        lines.append(
-            f"- [{course.title}](../../courses/{course.course_id}/index.md) — `{course.course_id}`"
-        )
+    for course, item in zip(courses, results):
+        if item.get("status") == "ok":
+            lines.append(
+                f"- [{course.title}](../../courses/{course.course_id}/index.md) — `{course.course_id}`"
+            )
+        else:
+            lines.append(
+                f"- {course.title} — `{course.course_id}` — failed: {item.get('error', 'unknown error')}"
+            )
     lines.extend(["", "Machine-readable list: [manifest.json](manifest.json)", ""])
     index_path = semester_dir / "index.md"
     index_path.write_text("\n".join(lines), encoding="utf-8")

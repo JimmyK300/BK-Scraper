@@ -28,6 +28,63 @@ def test_url_scope():
     assert not should_follow_html("https://example.com/page")
 
 
+def test_course_parser_strips_moodle_accesshide_chrome():
+    html = """
+    <html><head><title>Course: Algorithms | BK-LMS</title></head>
+    <body>
+      <li class="section course-section" data-for="section">
+        <div class="course-section-header" data-for="section_title">
+          <label class="sr-only">Select section Week 1</label>
+          <h3 class="h4 sectionname" data-for="section_title">
+            <a href="/course/section.php?id=1">Week 1</a>
+          </h3>
+          <span class="collapseall">Collapse all</span>
+        </div>
+        <li class="activity modtype_resource" data-for="cmitem" data-id="9">
+          <div class="activity-item" data-activityname="Lecture 1">
+            <label class="sr-only">Select activity Lecture 1</label>
+            <a href="/mod/resource/view.php?id=9" class="aalink">
+              <span class="instancename">Lecture 1 <span class="accesshide"> File</span></span>
+            </a>
+            <div>This syllabus outlines the course objectives.</div>
+          </div>
+        </li>
+      </li>
+    </body></html>
+    """
+    title, items = parse_course_page(html)
+    assert title == "Algorithms"
+    assert items[0].section == "Week 1"
+    assert items[0].title == "Lecture 1"
+    assert items[0].item_type == "resource"
+
+
+def test_course_parser_strips_label_accesshide_chrome():
+    html = """
+    <html><head><title>Course: Philosophy | BK-LMS</title></head>
+    <body>
+      <li class="section course-section" data-for="section">
+        <h3 class="sectionname">Reminders</h3>
+        <li class="activity modtype_label" data-for="cmitem" data-id="3">
+          <div class="activity-item" data-activityname="Office hours">
+            <label class="sr-only">Select activity Office hours</label>
+            <div class="activity-altcontent">
+              Office hours are on Tuesday. Please read the textbook first.
+            </div>
+          </div>
+        </li>
+      </li>
+    </body></html>
+    """
+    title, items = parse_course_page(html)
+    assert title == "Philosophy"
+    assert items[0].item_type == "label"
+    assert items[0].url is None
+    assert items[0].title == "Office hours"
+    assert "Select activity" not in items[0].inline_text
+    assert "Office hours are on Tuesday" in items[0].inline_text
+
+
 def test_course_parser_extracts_sections_and_activities():
     html = """
     <html><head><title>Course: Algorithms | BK-LMS</title></head>

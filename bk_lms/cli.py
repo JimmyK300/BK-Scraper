@@ -7,7 +7,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from .auth import ensure_authenticated_profile
+from .auth import authenticated_session
 from .crawler import DEFAULT_PROFILE_DIR, LMS_BASE, crawl_course, default_pkv_root
 from .discovery import crawl_semester
 
@@ -73,30 +73,35 @@ def course_url(value: str) -> str:
 
 
 async def _run(args: argparse.Namespace) -> Path:
-    await ensure_authenticated_profile(args.profile, headless=args.headless)
+    async with authenticated_session(args.profile, headless=args.headless) as context:
+        if args.command == "crawl":
+            return await crawl_course(
+                course_url(args.course),
+                pkv_root=args.pkv,
+                profile_dir=args.profile,
+                headless=args.headless,
+                max_pages=args.max_pages,
+                context=context,
+            )
 
-    if args.command == "crawl":
-        return await crawl_course(
-            course_url(args.course),
-            pkv_root=args.pkv,
-            profile_dir=args.profile,
-            headless=args.headless,
-            max_pages=args.max_pages,
-        )
-
-    if args.command == "crawl-semester":
-        return await crawl_semester(
-            args.semester,
-            pkv_root=args.pkv,
-            profile_dir=args.profile,
-            max_pages=args.max_pages,
-        )
+        if args.command == "crawl-semester":
+            return await crawl_semester(
+                args.semester,
+                pkv_root=args.pkv,
+                profile_dir=args.profile,
+                max_pages=args.max_pages,
+                headless=args.headless,
+                context=context,
+            )
 
     raise RuntimeError(f"Unknown command: {args.command}")
 
 
 def main() -> None:
     # OS environment variables retain priority; .env fills only missing values.
+    # Load cwd .env explicitly: python-dotenv otherwise searches from the
+    # calling file, which misses a project .env when invoked via a temp script.
+    load_dotenv(Path.cwd() / ".env", override=False)
     load_dotenv(override=False)
     args = build_parser().parse_args()
     output = asyncio.run(_run(args))
