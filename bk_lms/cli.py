@@ -10,6 +10,7 @@ from dotenv import load_dotenv
 from .auth import authenticated_session
 from .crawler import DEFAULT_PROFILE_DIR, LMS_BASE, crawl_course, default_pkv_root
 from .discovery import crawl_semester
+from .organize import organize_semester
 
 
 def _shared_export_arguments(parser: argparse.ArgumentParser) -> None:
@@ -63,6 +64,23 @@ def build_parser() -> argparse.ArgumentParser:
         help="semester token contained in LMS course titles (default: BK_LMS_SEMESTER or HK261)",
     )
     _shared_export_arguments(semester)
+
+    organize = sub.add_parser(
+        "organize-semester",
+        help="rebuild Materials/<semester>/ indexes from existing PKV scrape outputs (no LMS)",
+    )
+    organize.add_argument(
+        "semester",
+        nargs="?",
+        default=os.environ.get("BK_LMS_SEMESTER", "HK261"),
+        help="semester token (default: BK_LMS_SEMESTER or HK261)",
+    )
+    organize.add_argument(
+        "--pkv",
+        type=Path,
+        default=default_pkv_root(),
+        help="Personal-Knowledge-Vault root (or set PKV_PATH)",
+    )
     return parser
 
 
@@ -73,6 +91,9 @@ def course_url(value: str) -> str:
 
 
 async def _run(args: argparse.Namespace) -> Path:
+    if args.command == "organize-semester":
+        return organize_semester(args.semester, pkv_root=args.pkv)
+
     async with authenticated_session(args.profile, headless=args.headless) as context:
         if args.command == "crawl":
             return await crawl_course(
