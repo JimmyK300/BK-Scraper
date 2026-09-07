@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from urllib.parse import parse_qs, urljoin, urlparse
@@ -27,7 +28,7 @@ def _course_id(url: str) -> str | None:
 
 
 def parse_dashboard_courses(html: str) -> list[CourseLink]:
-    """Extract unique Moodle course links from an authenticated /my/ page."""
+    """Fallback parser for Moodle pages that render course links in HTML."""
     soup = BeautifulSoup(html, "html.parser")
     by_id: dict[str, CourseLink] = {}
 
@@ -55,12 +56,69 @@ def parse_dashboard_courses(html: str) -> list[CourseLink]:
             continue
         candidate = CourseLink(course_id=course_id, title=title, url=url)
         previous = by_id.get(course_id)
-        # Dashboard cards can repeat a course with tiny labels such as "View".
-        # Prefer the most descriptive text observed for that course id.
         if previous is None or len(candidate.title) > len(previous.title):
             by_id[course_id] = candidate
 
     return sorted(by_id.values(), key=lambda course: int(course.course_id))
+
+
+def extract_sesskey(html: str) -> str:
+    match = re.search(r'"sesskey":"([^"]+)"', html)
+    if not match:
+        raise RuntimeError("Moodle sesskey was not found on /my/courses.php")
+    return match.group(1)
+
+
+def courses_payload() -> list[dict[str, object]]:
+    # Ported from the previous tested Rust implementation in this repository.
+    return [
+        {
+            "index": 0,
+            "methodname": "core_course_get_enrolled_courses_by_timeline_classification",
+            "args": {
+                "offset": 0,
+                "limit": 0,
+                "classification": "all",
+                "sort": "shortname",
+                "customfieldname": "",
+                "customfieldvalue": "",
+            },
+        }
+    ]
+
+
+def parse_courses_ajax(data: object) -> list[CourseLink]:
+    if not isinstance(data, list) or not data:
+        raise RuntimeError("Moodle courses AJAX returned an empty or malformed response")
+    first = data[0]
+    if not isinstance(first, dict):
+        raise RuntimeError("Moodle courses AJAX response item is malformed")
+    if first.get("error"):
+        detail = first.get("exception") or "no exception details"
+        raise RuntimeError(f"Moodle courses AJAX returned an error: {detail}")
+
+    payload = first.get("data")
+    if not isinstance(payload, dict) or not isinstance(payload.get("courses"), list):
+        raise RuntimeError("Moodle courses AJAX response is missing data.courses")
+
+    courses: list[CourseLink] = []
+    for item in payload["courses"]:
+        if not isinstance(item, dict):
+            continue
+        raw_id = item.get("id")
+        title = str(item.get("fullname") or "").strip()
+        if raw_id is None or not str(raw_id).isdigit() or not title:
+            continue
+        course_id = str(raw_id)
+        url = str(item.get("viewurl") or "").strip()
+        if not url:
+            url = f"{LMS_BASE}/course/view.php?id={course_id}"
+        else:
+            url = urljoin(LMS_BASE, url)
+        courses.append(CourseLink(course_id=course_id, title=title, url=url))
+
+    courses.sort(key=lambda course: int(course.course_id))
+    return courses
 
 
 def select_semester_courses(
@@ -85,12 +143,23 @@ async def discover_courses(
         )
         try:
             page = context.pages[0] if context.pages else await context.new_page()
-            await page.goto(f"{LMS_BASE}/my/", wait_until="domcontentloaded")
+            await page.goto(f"{LMS_BASE}/my/courses.php", wait_until="domcontentloaded")
             if urlparse(page.url).path.startswith("/login/"):
                 raise RuntimeError(
                     "BK-LMS profile is not authenticated. Authenticate before course discovery."
                 )
-            return parse_dashboard_courses(await page.content())
+            html = await page.content()
+            sesskey = extract_sesskey(html)
+            service_url = (
+                f"{LMS_BASE}/lib/ajax/service.php?sesskey={sesskey}"
+                "&info=core_course_get_enrolled_courses_by_timeline_classification"
+            )
+            response = await context.request.post(service_url, data=courses_payload())
+            if not response.ok:
+                raise RuntimeError(
+                    f"Moodle courses AJAX returned HTTP {response.status}"
+                )
+            return parse_courses_ajax(await response.json())
         finally:
             await context.close()
 
@@ -102,7 +171,7 @@ async def crawl_semester(
     profile_dir: Path = DEFAULT_PROFILE_DIR,
     max_pages: int = 200,
 ) -> Path:
-    """Discover and export every dashboard course whose title contains semester_code."""
+    """Discover and export every enrolled course whose fullname contains semester_code."""
     root = (pkv_root or default_pkv_root()).expanduser()
     courses = select_semester_courses(
         await discover_courses(profile_dir=profile_dir, headless=True),
@@ -110,7 +179,7 @@ async def crawl_semester(
     )
     if not courses:
         raise RuntimeError(
-            f"No dashboard courses matched semester token {semester_code!r}."
+            f"No enrolled courses matched semester token {semester_code!r}."
         )
 
     results: list[dict[str, str]] = []
@@ -123,12 +192,7 @@ async def crawl_semester(
             headless=True,
             max_pages=max_pages,
         )
-        results.append(
-            {
-                **asdict(course),
-                "index_path": str(output),
-            }
-        )
+        results.append({**asdict(course), "index_path": str(output)})
 
     semester_dir = root / "lms" / "semesters" / semester_code.upper()
     semester_dir.mkdir(parents=True, exist_ok=True)
