@@ -5,7 +5,13 @@ from bk_lms.crawler import (
     parse_course_page,
     should_follow_html,
 )
-from bk_lms.discovery import parse_dashboard_courses, select_semester_courses
+from bk_lms.discovery import (
+    courses_payload,
+    extract_sesskey,
+    parse_courses_ajax,
+    parse_dashboard_courses,
+    select_semester_courses,
+)
 
 
 def test_url_scope():
@@ -74,3 +80,37 @@ def test_dashboard_parser_prefers_descriptive_course_title():
 
     selected = select_semester_courses(courses, "hk261")
     assert [course.course_id for course in selected] == ["100"]
+
+
+def test_ajax_course_discovery_and_semester_filter():
+    html = '<script>window.M = {"sesskey":"abc123"};</script>'
+    assert extract_sesskey(html) == "abc123"
+    payload = courses_payload()
+    assert payload[0]["methodname"] == (
+        "core_course_get_enrolled_courses_by_timeline_classification"
+    )
+
+    response = [
+        {
+            "error": False,
+            "data": {
+                "courses": [
+                    {
+                        "id": 20,
+                        "fullname": "Computer Architecture (CO2007)_A (CLC_HK261)",
+                        "viewurl": "https://lms.hcmut.edu.vn/course/view.php?id=20",
+                    },
+                    {
+                        "id": 10,
+                        "fullname": "Old Course (CO1000)_B (CLC_HK252)",
+                        "viewurl": "/course/view.php?id=10",
+                    },
+                ]
+            },
+        }
+    ]
+    courses = parse_courses_ajax(response)
+    assert [course.course_id for course in courses] == ["10", "20"]
+    assert [course.course_id for course in select_semester_courses(courses, "HK261")] == [
+        "20"
+    ]
