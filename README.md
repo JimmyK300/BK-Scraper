@@ -2,42 +2,53 @@
 
 Local-first exporter for **HCMUT BK-LMS**.
 
-The project is no longer a Rust-learning exercise. v0 has one concrete job:
+v0 has one concrete job:
 
-> Log into BK-LMS in a local browser, crawl a course's useful Moodle content, and export a durable retrieval snapshot into Personal-Knowledge-Vault.
+> Authenticate to BK-LMS from local configuration, discover the user's Semester 1 2026-2027 courses, crawl useful Moodle content, and export durable retrieval snapshots into Personal-Knowledge-Vault.
 
-The old Rust code remains in the repository as legacy/reference material, but the active implementation is Python.
+The active implementation is Python. The older Rust and TypeScript implementations remain as reference material.
 
-## What v0 does
+## v0 target
 
-Given a course such as:
+Semester 1 of academic year 2026-2027 is represented by the LMS course-title token `HK261`.
 
-```text
-https://lms.hcmut.edu.vn/course/view.php?id=11267
+```bash
+bk-lms crawl-semester HK261
 ```
 
-it:
+The command:
 
-- opens Chromium with a **persistent local profile**;
-- lets you complete HCMUT/SSO login yourself when needed;
-- extracts the course section/activity map;
-- recursively follows bounded, content-bearing Moodle pages;
-- downloads LMS-hosted files such as PDFs, slides, documents, archives, and media;
-- turns useful HTML page bodies into Markdown;
-- records external links without crawling the external site;
-- writes everything into `PKV/lms/courses/<course-id>/`.
+1. reuses or establishes an authenticated local Chromium profile;
+2. discovers all enrolled courses through Moodle's authenticated course-overview AJAX API;
+3. selects course full names containing `HK261`;
+4. runs the existing bounded per-course crawler for every match;
+5. writes one semester index plus the normal per-course snapshots into PKV.
 
-It deliberately does **not** implement syncing, diffs, notifications, scheduling, databases, or AI indexing yet.
+A single course can still be exported directly:
 
-It also does not recursively mirror forum discussions, quiz attempts, or submission workflows.
+```bash
+bk-lms crawl 11267
+```
 
-## Security model
+## Local credentials
 
-Do not put your HCMUT password in code, prompts, `.env`, or this repository.
+Copy the template:
 
-The crawler launches a browser and you log in yourself. Chromium keeps the authenticated session in `.bk-lms-profile/`, which is git-ignored. The generated PKV export contains course content but no copied browser cookie store.
+```bash
+cp .env.example .env
+```
 
-If your PKV is synced to GitHub, make sure its visibility and your rights to store course materials there are appropriate.
+Set your own HCMUT credentials in the local `.env`:
+
+```dotenv
+BK_LMS_USERNAME=your_bknetid
+BK_LMS_PASSWORD=your_hcmut_sso_password
+BK_LMS_SEMESTER=HK261
+```
+
+`.env` is git-ignored. **Never commit it or paste its contents into prompts/issues.** The password exists locally in plaintext, so protect the machine/account and restrict access to the repository directory.
+
+The crawler attempts the HCMUT CAS/SSO browser login automatically when credentials are configured. The authenticated Chromium session is retained in `.bk-lms-profile/`, which is also git-ignored. If SSO changes or requires an interactive step, a non-headless run can fall back to manual browser login.
 
 ## Install
 
@@ -61,18 +72,30 @@ pip install -e ".[dev]"
 pytest
 ```
 
-## Export course 11267
+## Export Semester 1 2026-2027
 
-If your PKV is at the historical Windows location, this is enough:
+With `.env` configured:
 
 ```bash
-bk-lms crawl 11267
+bk-lms crawl-semester
 ```
 
-Otherwise point to it explicitly:
+`HK261` is the v0 default. You can also provide the token explicitly:
 
 ```bash
-bk-lms crawl 11267 --pkv /path/to/Personal-Knowledge-Vault
+bk-lms crawl-semester HK261
+```
+
+For an already-valid browser profile and fully unattended execution:
+
+```bash
+bk-lms crawl-semester HK261 --headless
+```
+
+Point to PKV explicitly when needed:
+
+```bash
+bk-lms crawl-semester HK261 --pkv /path/to/Personal-Knowledge-Vault
 ```
 
 or set:
@@ -81,23 +104,17 @@ or set:
 PKV_PATH=/path/to/Personal-Knowledge-Vault
 ```
 
-On the first run, Chromium opens. Complete the university login there, then return to the terminal and press Enter. The browser profile is reused later.
-
-Once a working session exists, unattended/headless retrieval is possible:
-
-```bash
-bk-lms crawl 11267 --headless
-```
-
-v0 overwrites the course export in place. That is intentional: it is a snapshot exporter, not a sync/history engine.
-
 ## Output
 
 ```text
 Personal-Knowledge-Vault/
   lms/
+    semesters/
+      HK261/
+        index.md
+        manifest.json
     courses/
-      11267/
+      <course-id>/
         index.md
         manifest.jsonl
         raw/
@@ -108,12 +125,28 @@ Personal-Knowledge-Vault/
           ...
 ```
 
-`index.md` is the human/AI entry point. `manifest.jsonl` is the machine-readable map containing original URLs, local paths, item type, section, content type, and SHA-256 hashes.
+The semester index lists every matched course. Each course `index.md` is the human/AI entry point; `manifest.jsonl` records original URLs, local paths, item type, section, content type, and SHA-256 hashes.
 
-This gives future agents a small durable surface to query before they ever need to touch the LMS.
+v0 overwrites each course export in place. It is a snapshot exporter, not yet a sync/history engine.
 
-## Crawl boundary
+## What course crawling includes
 
-The crawler does **not** blindly recurse through the entire Moodle site.
+For each course the crawler:
 
-It follows selected content routes (`assign`, `book`, `folder`, `lesson`, `page`, `quiz`, `resource`, `url`, `wiki`) and LMS-hosted files. Global navigation, profiles, dashboards, other courses, and external sites are not traversed. A `--max-pages` cap adds a second guardrail.
+- extracts the course section/activity map;
+- recursively follows bounded, content-bearing Moodle pages;
+- downloads LMS-hosted PDFs, slides, documents, archives, images, and media;
+- turns useful HTML page bodies into Markdown;
+- records external links without crawling the external site.
+
+It follows selected Moodle content routes (`assign`, `book`, `folder`, `lesson`, `page`, `quiz`, `resource`, `url`, `wiki`) and LMS-hosted files. Global navigation, profiles, dashboards, other courses, and external sites are not recursively traversed. `--max-pages` provides a second guardrail per course.
+
+Interactive quiz attempts, submission workflows, and forum discussions are deliberately not mirrored in v0.
+
+## Security and scope
+
+- Use only your own HCMUT account and content you are authorized to access.
+- `.env` and `.bk-lms-profile/` must remain local and uncommitted.
+- The scraper is read-only; it does not submit assignments, attempts, forms, or grades.
+- It does not bypass CAPTCHA, MFA, or other interactive security controls.
+- If PKV is synced to GitHub, ensure its visibility and your right to store course materials there are appropriate.

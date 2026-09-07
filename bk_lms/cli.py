@@ -2,15 +2,46 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import os
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+from .auth import authenticated_session
 from .crawler import DEFAULT_PROFILE_DIR, LMS_BASE, crawl_course, default_pkv_root
+from .discovery import crawl_semester
+
+
+def _shared_export_arguments(parser: argparse.ArgumentParser) -> None:
+    parser.add_argument(
+        "--pkv",
+        type=Path,
+        default=default_pkv_root(),
+        help="Personal-Knowledge-Vault root (or set PKV_PATH)",
+    )
+    parser.add_argument(
+        "--profile",
+        type=Path,
+        default=DEFAULT_PROFILE_DIR,
+        help="persistent browser profile used only for LMS session state",
+    )
+    parser.add_argument(
+        "--headless",
+        action="store_true",
+        help="authenticate/reuse the LMS session without showing Chromium",
+    )
+    parser.add_argument(
+        "--max-pages",
+        type=int,
+        default=200,
+        help="safety cap for recursively followed Moodle content pages per course",
+    )
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="bk-lms",
-        description="Export one authenticated HCMUT BK-LMS course into PKV.",
+        description="Export authenticated HCMUT BK-LMS content into PKV.",
     )
     sub = parser.add_subparsers(dest="command", required=True)
 
@@ -19,29 +50,19 @@ def build_parser() -> argparse.ArgumentParser:
         "course",
         help="numeric course id or full https://lms.hcmut.edu.vn/course/view.php?id=... URL",
     )
-    crawl.add_argument(
-        "--pkv",
-        type=Path,
-        default=default_pkv_root(),
-        help="Personal-Knowledge-Vault root (or set PKV_PATH)",
+    _shared_export_arguments(crawl)
+
+    semester = sub.add_parser(
+        "crawl-semester",
+        help="discover dashboard courses for one HK token and export all of them",
     )
-    crawl.add_argument(
-        "--profile",
-        type=Path,
-        default=DEFAULT_PROFILE_DIR,
-        help="persistent browser profile used only for LMS session state",
+    semester.add_argument(
+        "semester",
+        nargs="?",
+        default=os.environ.get("BK_LMS_SEMESTER", "HK261"),
+        help="semester token contained in LMS course titles (default: BK_LMS_SEMESTER or HK261)",
     )
-    crawl.add_argument(
-        "--headless",
-        action="store_true",
-        help="reuse an already-authenticated profile without showing Chromium",
-    )
-    crawl.add_argument(
-        "--max-pages",
-        type=int,
-        default=200,
-        help="safety cap for recursively followed Moodle content pages",
-    )
+    _shared_export_arguments(semester)
     return parser
 
 
@@ -51,19 +72,40 @@ def course_url(value: str) -> str:
     return value
 
 
-def main() -> None:
-    args = build_parser().parse_args()
-    if args.command == "crawl":
-        index = asyncio.run(
-            crawl_course(
+async def _run(args: argparse.Namespace) -> Path:
+    async with authenticated_session(args.profile, headless=args.headless) as context:
+        if args.command == "crawl":
+            return await crawl_course(
                 course_url(args.course),
                 pkv_root=args.pkv,
                 profile_dir=args.profile,
                 headless=args.headless,
                 max_pages=args.max_pages,
+                context=context,
             )
-        )
-        print(f"\nExport complete: {index}")
+
+        if args.command == "crawl-semester":
+            return await crawl_semester(
+                args.semester,
+                pkv_root=args.pkv,
+                profile_dir=args.profile,
+                max_pages=args.max_pages,
+                headless=args.headless,
+                context=context,
+            )
+
+    raise RuntimeError(f"Unknown command: {args.command}")
+
+
+def main() -> None:
+    # OS environment variables retain priority; .env fills only missing values.
+    # Load cwd .env explicitly: python-dotenv otherwise searches from the
+    # calling file, which misses a project .env when invoked via a temp script.
+    load_dotenv(Path.cwd() / ".env", override=False)
+    load_dotenv(override=False)
+    args = build_parser().parse_args()
+    output = asyncio.run(_run(args))
+    print(f"\nExport complete: {output}")
 
 
 if __name__ == "__main__":
