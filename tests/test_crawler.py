@@ -5,6 +5,7 @@ from bk_lms.crawler import (
     parse_course_page,
     should_follow_html,
 )
+from bk_lms.discovery import parse_dashboard_courses, select_semester_courses
 
 
 def test_url_scope():
@@ -53,3 +54,23 @@ def test_content_disposition_filename():
         content_disposition_filename('attachment; filename="lecture.pdf"')
         == "lecture.pdf"
     )
+
+
+def test_dashboard_parser_prefers_descriptive_course_title():
+    html = """
+    <div>
+      <a href="/course/view.php?id=100">View</a>
+      <a href="https://lms.hcmut.edu.vn/course/view.php?id=100">
+        Data Structures (CO2003)_LECTURER (CLC_HK261) [CC01]
+      </a>
+      <a href="/course/view.php?id=200">
+        Old Course (CO1000)_LECTURER (CLC_HK252)
+      </a>
+    </div>
+    """
+    courses = parse_dashboard_courses(html)
+    assert [course.course_id for course in courses] == ["100", "200"]
+    assert courses[0].title.startswith("Data Structures")
+
+    selected = select_semester_courses(courses, "hk261")
+    assert [course.course_id for course in selected] == ["100"]
