@@ -1,6 +1,7 @@
 from bk_lms.crawler import (
     content_disposition_filename,
     course_id_from_url,
+    discover_links,
     looks_like_file_url,
     parse_course_page,
     should_follow_html,
@@ -21,11 +22,39 @@ def test_url_scope():
     assert should_follow_html(
         "https://lms.hcmut.edu.vn/mod/page/view.php?id=123"
     )
+    assert should_follow_html(
+        "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=337446",
+        "143335",
+    )
     assert looks_like_file_url(
         "https://lms.hcmut.edu.vn/pluginfile.php/1/mod_resource/content/1/a.pdf"
     )
     assert not should_follow_html("https://lms.hcmut.edu.vn/user/profile.php?id=1")
     assert not should_follow_html("https://example.com/page")
+    assert not should_follow_html(
+        "https://lms.hcmut.edu.vn/mod/scorm/player.php?a=1",
+        "143335",
+    )
+
+
+def test_discover_links_extracts_pluginfile_from_folder_html():
+    html = """
+    <html><body>
+      <div id="region-main">
+        <a href="/pluginfile.php/999/mod_folder/content/0/Lecture-01.pdf">Lecture-01</a>
+        <a href="/mod/scorm/view.php?id=337446">SCORM package</a>
+        <nav><a href="/my/">Dashboard chrome</a></nav>
+      </div>
+    </body></html>
+    """
+    seeds = discover_links(html, "https://lms.hcmut.edu.vn/mod/folder/view.php?id=1")
+    urls = {seed.url for seed in seeds}
+    assert (
+        "https://lms.hcmut.edu.vn/pluginfile.php/999/mod_folder/content/0/Lecture-01.pdf"
+        in urls
+    )
+    assert "https://lms.hcmut.edu.vn/mod/scorm/view.php?id=337446" in urls
+    assert not any("/my/" in url for url in urls)
 
 
 def test_course_parser_strips_moodle_accesshide_chrome():

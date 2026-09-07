@@ -22,7 +22,9 @@ The command:
 2. discovers all enrolled courses through Moodle's authenticated course-overview AJAX API;
 3. selects course full names containing `HK261`;
 4. runs the existing bounded per-course crawler for every match;
-5. writes one semester index plus the normal per-course snapshots into PKV.
+5. writes one semester index plus the normal per-course snapshots into PKV;
+6. writes a per-course `audit.json` so every discovered LMS URL is followed, recorded as a duplicate, or excluded with a reason (no silent internal-link drop);
+7. rebuilds lightweight `Materials/<semester>/` indexes that link into `lms/courses/<id>/` without copying large files.
 
 A single course can still be exported directly:
 
@@ -92,6 +94,12 @@ For an already-valid browser profile and fully unattended execution:
 bk-lms crawl-semester HK261 --headless
 ```
 
+Rebuild grouped PKV materials from an existing scrape (no LMS login):
+
+```bash
+bk-lms organize-semester HK261
+```
+
 Point to PKV explicitly when needed:
 
 ```bash
@@ -113,11 +121,18 @@ Personal-Knowledge-Vault/
       HK261/
         index.md
         manifest.json
+        audit.json
     courses/
       <course-id>/
         index.md
         manifest.jsonl
+        audit.json
         raw/
+  Materials/
+    HK261/
+      README.md
+      _Index/
+      <SubjectFamily>/
           course.html
         pages/
           ...

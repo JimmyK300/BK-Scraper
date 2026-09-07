@@ -11,6 +11,7 @@ from playwright.async_api import BrowserContext
 
 from .auth import authenticated_session
 from .crawler import DEFAULT_PROFILE_DIR, LMS_BASE, crawl_course, default_pkv_root
+from .organize import organize_semester
 
 
 @dataclass(slots=True)
@@ -280,7 +281,83 @@ async def crawl_semester(
             lines.append(
                 f"- {course.title} — `{course.course_id}` — failed: {item.get('error', 'unknown error')}"
             )
-    lines.extend(["", "Machine-readable list: [manifest.json](manifest.json)", ""])
+    audit_rollup = _write_semester_audit(root, semester_dir, results)
+    materials_readme: Path | None = None
+    try:
+        materials_readme = organize_semester(semester_code.upper(), pkv_root=root)
+    except Exception as exc:
+        print(f"  organize-semester skipped: {exc}")
+
+    lines.extend(
+        [
+            "",
+            "Machine-readable list: [manifest.json](manifest.json)",
+            "Completeness rollup: [audit.json](audit.json)",
+        ]
+    )
+    if materials_readme is not None:
+        lines.append(
+            f"Grouped materials index: [Materials/{semester_code.upper()}/README.md]({_rel(semester_dir, materials_readme)})"
+        )
+    lines.append("")
     index_path = semester_dir / "index.md"
     index_path.write_text("\n".join(lines), encoding="utf-8")
+    if audit_rollup.get("incomplete"):
+        print(
+            "Completeness: some courses are incomplete "
+            f"(cap/errors): {audit_rollup['incomplete']}"
+        )
     return index_path
+
+
+def _rel(start: Path, target: Path) -> str:
+    import os
+
+    return Path(os.path.relpath(target, start)).as_posix()
+
+
+def _write_semester_audit(
+    root: Path, semester_dir: Path, results: list[dict[str, str]]
+) -> dict:
+    courses_root = root / "lms" / "courses"
+    courses: list[dict] = []
+    incomplete: list[str] = []
+    for item in results:
+        course_id = str(item.get("course_id") or "")
+        audit_path = courses_root / course_id / "audit.json"
+        audit: dict = {}
+        if audit_path.is_file():
+            try:
+                audit = json.loads(audit_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                audit = {}
+        complete = bool(audit.get("complete")) and item.get("status") == "ok"
+        if not complete:
+            incomplete.append(course_id)
+        courses.append(
+            {
+                "course_id": course_id,
+                "title": item.get("title"),
+                "status": item.get("status"),
+                "complete": complete,
+                "cap_hit": audit.get("cap_hit"),
+                "error_count": audit.get("error_count"),
+                "html_followed": audit.get("html_followed"),
+                "module_types": audit.get("module_types") or [],
+                "counts": audit.get("counts") or {},
+                "audit": f"lms/courses/{course_id}/audit.json",
+            }
+        )
+    payload = {
+        "semester": semester_dir.name,
+        "course_count": len(results),
+        "ok_count": sum(1 for item in results if item.get("status") == "ok"),
+        "complete_count": sum(1 for row in courses if row.get("complete")),
+        "incomplete": incomplete,
+        "courses": courses,
+    }
+    (semester_dir / "audit.json").write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+    return payload

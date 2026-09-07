@@ -19,33 +19,16 @@ from playwright.async_api import APIResponse, BrowserContext, Page, async_playwr
 
 from .auth import authenticate_page
 from .browser import launch_persistent_lms_context, save_storage_state
+from .policy import (
+    FILE_EXTENSIONS,
+    classify_url,
+    looks_like_file_url as policy_looks_like_file_url,
+    should_follow_html as policy_should_follow_html,
+)
 
 
 LMS_BASE = "https://lms.hcmut.edu.vn"
 DEFAULT_PROFILE_DIR = Path(".bk-lms-profile")
-
-# Content-bearing Moodle routes. Deliberately excludes global navigation and
-# forum discussion pages (which may contain classmates' personal content).
-FOLLOW_MODS = {
-    "assign",
-    "book",
-    "folder",
-    "lesson",
-    "page",
-    "quiz",
-    "resource",
-    "url",
-    "wiki",
-}
-FOLLOW_PATH_RE = re.compile(
-    r"^/mod/(?:" + "|".join(sorted(FOLLOW_MODS)) + r")/view\.php$"
-)
-FILE_EXTENSIONS = {
-    ".7z", ".csv", ".doc", ".docx", ".epub", ".gif", ".jpeg", ".jpg",
-    ".json", ".md", ".mp3", ".mp4", ".odp", ".ods", ".odt", ".pdf",
-    ".png", ".ppt", ".pptx", ".rar", ".rtf", ".svg", ".txt", ".webm",
-    ".webp", ".xls", ".xlsx", ".xml", ".zip",
-}
 
 
 @dataclass(slots=True)
@@ -81,6 +64,17 @@ class CourseActivity:
     inline_text: str = ""
 
 
+@dataclass(slots=True)
+class AuditEvent:
+    url: str
+    decision: str
+    reason: str
+    title: str = ""
+    item_type: str = ""
+    kind: str = ""
+    relation: str = ""
+
+
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
@@ -108,18 +102,12 @@ def is_lms_url(url: str) -> bool:
     return parsed.scheme in {"http", "https"} and parsed.netloc == "lms.hcmut.edu.vn"
 
 
-def should_follow_html(url: str) -> bool:
-    parsed = urlparse(url)
-    return parsed.netloc == "lms.hcmut.edu.vn" and bool(FOLLOW_PATH_RE.match(parsed.path))
+def should_follow_html(url: str, source_course_id: str = "") -> bool:
+    return policy_should_follow_html(url, source_course_id)
 
 
 def looks_like_file_url(url: str) -> bool:
-    parsed = urlparse(url)
-    if parsed.netloc != "lms.hcmut.edu.vn":
-        return False
-    if parsed.path.startswith("/pluginfile.php/"):
-        return True
-    return Path(parsed.path).suffix.lower() in FILE_EXTENSIONS
+    return policy_looks_like_file_url(url)
 
 
 def activity_type(classes: Iterable[str]) -> str:
@@ -220,6 +208,53 @@ def parse_course_page(html: str) -> tuple[str, list[CourseActivity]]:
     return title, activities
 
 
+CHROME_SELECTORS = (
+    "nav",
+    ".secondary-navigation",
+    ".drawer",
+    ".block",
+    ".breadcrumb",
+    ".activity-navigation",
+    "form[action*='logout']",
+    "#page-header",
+    "#page-footer",
+    ".footer-popover",
+)
+
+
+def strip_chrome(region) -> None:
+    for selector in CHROME_SELECTORS:
+        for node in region.select(selector):
+            node.decompose()
+
+
+def discover_links(html: str, base_url: str, *, section: str = "", item_type: str = "", relation: str = "linked-from-page") -> list[LinkSeed]:
+    soup = BeautifulSoup(html, "html.parser")
+    region = main_region(soup)
+    strip_chrome(region)
+    seeds: list[LinkSeed] = []
+    seen: set[str] = set()
+    for tag in region.select("[href], [src]"):
+        raw = tag.get("href") or tag.get("src")
+        if not raw or raw.startswith("#"):
+            continue
+        target = canonical_url(urljoin(base_url, raw))
+        if target in seen:
+            continue
+        seen.add(target)
+        title = visible_text(tag) or Path(urlparse(target).path).name or target
+        seeds.append(
+            LinkSeed(
+                url=target,
+                title=title,
+                section=section,
+                item_type=item_type,
+                relation=relation,
+            )
+        )
+    return seeds
+
+
 def content_disposition_filename(value: str | None) -> str | None:
     if not value:
         return None
@@ -254,6 +289,9 @@ class CourseCrawler:
         self.headless = headless
         self.max_pages = max_pages
         self.records: list[Record] = []
+        self.audit_events: list[AuditEvent] = []
+        self.html_followed = 0
+        self.cap_hit = False
         self._external_context = context
         self.context: BrowserContext | None = context
 
@@ -288,13 +326,27 @@ class CourseCrawler:
         html = await page.content()
         (self.output_dir / "raw" / "course.html").write_text(html, encoding="utf-8")
         course_title, activities = parse_course_page(html)
+        self.audit_events.append(
+            AuditEvent(
+                url=self.course_url,
+                decision="followed",
+                reason="course-landing",
+                title=course_title,
+                item_type="course",
+                kind="landing",
+                relation="root",
+            )
+        )
 
         queue: deque[LinkSeed] = deque()
+        queued: set[str] = set()
         for item in activities:
             if item.url:
+                url = canonical_url(item.url)
+                queued.add(url)
                 queue.append(
                     LinkSeed(
-                        url=item.url,
+                        url=url,
                         title=item.title,
                         section=item.section,
                         item_type=item.item_type,
@@ -304,7 +356,7 @@ class CourseCrawler:
                 self.records.append(
                     Record(
                         kind="inline",
-                        url=f"{self.course_url}#inline",
+                        url=f"{self.course_url}#inline-{item.item_type}",
                         title=item.title,
                         section=item.section,
                         item_type=item.item_type,
@@ -312,9 +364,29 @@ class CourseCrawler:
                         note=item.inline_text,
                     )
                 )
+                self.audit_events.append(
+                    AuditEvent(
+                        url=self.course_url,
+                        decision="followed",
+                        reason="inline-label",
+                        title=item.title,
+                        item_type=item.item_type,
+                        kind="inline",
+                        relation="activity",
+                    )
+                )
 
-        await self._crawl_queue(queue)
+        for extra in discover_links(html, self.course_url):
+            if extra.url in queued or extra.url == self.course_url:
+                continue
+            queued.add(extra.url)
+            extra.section = extra.section or "General"
+            extra.relation = extra.relation or "landing-link"
+            queue.append(extra)
+
+        await self._crawl_queue(page, queue)
         self._write_manifest()
+        self._write_audit(course_title, activities)
         self._write_index(course_title, activities)
 
     async def _open_authenticated_course(self, page: Page) -> None:
@@ -346,64 +418,346 @@ class CourseCrawler:
             and parse_qs(parsed.query).get("id", [None])[0] == self.course_id
         )
 
-    async def _crawl_queue(self, queue: deque[LinkSeed]) -> None:
-        seen: set[str] = set()
-        while queue and len(seen) < self.max_pages:
+    def _audit(self, event: AuditEvent) -> None:
+        self.audit_events.append(event)
+
+    async def _crawl_queue(self, page: Page, queue: deque[LinkSeed]) -> None:
+        seen: set[str] = {self.course_url}
+        remaining_after_cap: list[LinkSeed] = []
+        while queue:
             seed = queue.popleft()
             url = canonical_url(seed.url)
             if url in seen:
+                self._audit(
+                    AuditEvent(
+                        url=url,
+                        decision="duplicate",
+                        reason="already-seen",
+                        title=seed.title,
+                        item_type=seed.item_type,
+                        relation=seed.relation,
+                    )
+                )
                 continue
+
+            decision = classify_url(url, self.course_id)
+            if decision.action == "external":
+                seen.add(url)
+                self.records.append(
+                    Record(
+                        kind="external",
+                        url=url,
+                        title=seed.title,
+                        section=seed.section,
+                        item_type=seed.item_type,
+                        relation=seed.relation,
+                        note=decision.reason,
+                    )
+                )
+                self._audit(
+                    AuditEvent(
+                        url=url,
+                        decision="external",
+                        reason=decision.reason,
+                        title=seed.title,
+                        item_type=seed.item_type,
+                        kind="external",
+                        relation=seed.relation,
+                    )
+                )
+                continue
+            if decision.action == "exclude":
+                seen.add(url)
+                self.records.append(
+                    Record(
+                        kind="excluded",
+                        url=url,
+                        title=seed.title,
+                        section=seed.section,
+                        item_type=seed.item_type,
+                        relation=seed.relation,
+                        note=decision.reason,
+                    )
+                )
+                self._audit(
+                    AuditEvent(
+                        url=url,
+                        decision="excluded",
+                        reason=decision.reason,
+                        title=seed.title,
+                        item_type=seed.item_type,
+                        kind="excluded",
+                        relation=seed.relation,
+                    )
+                )
+                continue
+
+            is_file = looks_like_file_url(url) or decision.reason in {
+                "pluginfile",
+                "file-extension",
+                "folder-archive",
+            }
+            if not is_file and self.html_followed >= self.max_pages:
+                self.cap_hit = True
+                remaining_after_cap.append(seed)
+                continue
+
             seen.add(url)
-
-            if not is_lms_url(url):
-                self.records.append(
-                    Record(
-                        kind="external",
-                        url=url,
-                        title=seed.title,
-                        section=seed.section,
-                        item_type=seed.item_type,
-                        relation=seed.relation,
-                    )
-                )
-                continue
-
-            response, final_url, external_redirect = await self._fetch_internal(url)
-            if external_redirect:
-                self.records.append(
-                    Record(
-                        kind="external",
-                        url=external_redirect,
-                        title=seed.title,
-                        section=seed.section,
-                        item_type=seed.item_type,
-                        relation=seed.relation,
-                        note=f"Redirected from {url}",
-                    )
-                )
-                continue
-            if response is None:
-                self.records.append(
-                    Record(
-                        kind="error",
-                        url=url,
-                        title=seed.title,
-                        section=seed.section,
-                        item_type=seed.item_type,
-                        relation=seed.relation,
-                        note="Request failed",
-                    )
-                )
-                continue
-
-            content_type = response.headers.get("content-type", "").lower()
-            body = await response.body()
-            if "text/html" in content_type or "application/xhtml+xml" in content_type:
-                record, discovered = self._save_html(final_url, body, seed, content_type)
-                self.records.append(record)
-                queue.extend(discovered)
+            if is_file:
+                await self._capture_file(seed, url)
             else:
-                self.records.append(self._save_file(final_url, body, seed, response))
+                discovered = await self._capture_html(page, seed, url)
+                queue.extend(
+                    item for item in discovered if canonical_url(item.url) not in seen
+                )
+
+        for seed in remaining_after_cap:
+            url = canonical_url(seed.url)
+            self.records.append(
+                Record(
+                    kind="excluded",
+                    url=url,
+                    title=seed.title,
+                    section=seed.section,
+                    item_type=seed.item_type,
+                    relation=seed.relation,
+                    note="safety-cap",
+                )
+            )
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="excluded",
+                    reason="safety-cap",
+                    title=seed.title,
+                    item_type=seed.item_type,
+                    kind="excluded",
+                    relation=seed.relation,
+                )
+            )
+        for seed in queue:
+            url = canonical_url(seed.url)
+            self.records.append(
+                Record(
+                    kind="excluded",
+                    url=url,
+                    title=seed.title,
+                    section=seed.section,
+                    item_type=seed.item_type,
+                    relation=seed.relation,
+                    note="safety-cap" if self.cap_hit else "unprocessed",
+                )
+            )
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="excluded",
+                    reason="safety-cap" if self.cap_hit else "unprocessed",
+                    title=seed.title,
+                    item_type=seed.item_type,
+                    kind="excluded",
+                    relation=seed.relation,
+                )
+            )
+
+    async def _capture_file(self, seed: LinkSeed, url: str) -> None:
+        response, final_url, external_redirect = await self._fetch_internal(url)
+        if external_redirect:
+            self.records.append(
+                Record(
+                    kind="external",
+                    url=external_redirect,
+                    title=seed.title,
+                    section=seed.section,
+                    item_type=seed.item_type,
+                    relation=seed.relation,
+                    note=f"Redirected from {url}",
+                )
+            )
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="external",
+                    reason="file-redirect-external",
+                    title=seed.title,
+                    item_type=seed.item_type,
+                    kind="external",
+                    relation=seed.relation,
+                )
+            )
+            return
+        if response is None:
+            self.records.append(
+                Record(
+                    kind="error",
+                    url=url,
+                    title=seed.title,
+                    section=seed.section,
+                    item_type=seed.item_type,
+                    relation=seed.relation,
+                    note="Request failed",
+                )
+            )
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="error",
+                    reason="request-failed",
+                    title=seed.title,
+                    item_type=seed.item_type,
+                    kind="error",
+                    relation=seed.relation,
+                )
+            )
+            return
+        content_type = response.headers.get("content-type", "").lower()
+        body = await response.body()
+        if "text/html" in content_type or "application/xhtml+xml" in content_type:
+            record, _discovered = self._save_html(final_url, body, seed, content_type)
+            self.records.append(record)
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="followed",
+                    reason="file-url-returned-html",
+                    title=record.title,
+                    item_type=seed.item_type,
+                    kind="page",
+                    relation=seed.relation,
+                )
+            )
+            return
+        record = self._save_file(final_url, body, seed, response)
+        self.records.append(record)
+        self._audit(
+            AuditEvent(
+                url=url,
+                decision="followed",
+                reason="file",
+                title=record.title,
+                item_type=seed.item_type,
+                kind="file",
+                relation=seed.relation,
+            )
+        )
+
+    async def _capture_html(self, page: Page, seed: LinkSeed, url: str) -> list[LinkSeed]:
+        response, final_url, external_redirect = await self._fetch_internal(url)
+        if external_redirect:
+            self.records.append(
+                Record(
+                    kind="external",
+                    url=external_redirect,
+                    title=seed.title,
+                    section=seed.section,
+                    item_type=seed.item_type,
+                    relation=seed.relation,
+                    note=f"Redirected from {url}",
+                )
+            )
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="external",
+                    reason="html-redirect-external",
+                    title=seed.title,
+                    item_type=seed.item_type,
+                    kind="external",
+                    relation=seed.relation,
+                )
+            )
+            return []
+        if response is None:
+            self.records.append(
+                Record(
+                    kind="error",
+                    url=url,
+                    title=seed.title,
+                    section=seed.section,
+                    item_type=seed.item_type,
+                    relation=seed.relation,
+                    note="Request failed",
+                )
+            )
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="error",
+                    reason="request-failed",
+                    title=seed.title,
+                    item_type=seed.item_type,
+                    kind="error",
+                    relation=seed.relation,
+                )
+            )
+            return []
+
+        content_type = response.headers.get("content-type", "").lower()
+        body = await response.body()
+        if "text/html" not in content_type and "application/xhtml+xml" not in content_type:
+            record = self._save_file(final_url, body, seed, response)
+            self.records.append(record)
+            self._audit(
+                AuditEvent(
+                    url=url,
+                    decision="followed",
+                    reason="module-view-file",
+                    title=record.title,
+                    item_type=seed.item_type,
+                    kind="file",
+                    relation=seed.relation,
+                )
+            )
+            return []
+
+        html = body.decode("utf-8", errors="replace")
+        path = urlparse(url).path
+        needs_js = (
+            "/mod/folder/" in path
+            or "/mod/scorm/" in path
+            or "/mod/url/" in path
+            or path == "/course/view.php"
+        )
+        if needs_js:
+            browser_html = await self._browser_html(page, url)
+            if browser_html:
+                html, final_url = browser_html
+                body = html.encode("utf-8")
+                content_type = "text/html; charset=utf-8"
+
+        self.html_followed += 1
+        record, discovered = self._save_html(final_url, body, seed, content_type)
+        self.records.append(record)
+        self._audit(
+            AuditEvent(
+                url=url,
+                decision="followed",
+                reason=classify_url(url, self.course_id).reason,
+                title=record.title,
+                item_type=seed.item_type,
+                kind="page",
+                relation=seed.relation,
+            )
+        )
+        return discovered
+
+    async def _browser_html(self, page: Page, url: str) -> tuple[str, str] | None:
+        try:
+            await page.goto(url, wait_until="commit", timeout=60_000)
+            try:
+                await page.wait_for_load_state("domcontentloaded", timeout=15_000)
+            except Exception:
+                pass
+            try:
+                await page.wait_for_load_state("networkidle", timeout=6_000)
+            except Exception:
+                pass
+        except Exception:
+            return None
+        final = canonical_url(page.url)
+        if not is_lms_url(final):
+            return None
+        return await page.content(), final
 
     async def _fetch_internal(
         self, url: str
@@ -443,20 +797,10 @@ class CourseCrawler:
         html = body.decode("utf-8", errors="replace")
         soup = BeautifulSoup(html, "html.parser")
         region = main_region(soup)
-        for selector in (
-            "nav",
-            ".secondary-navigation",
-            ".drawer",
-            ".block",
-            ".breadcrumb",
-            ".activity-navigation",
-            "form[action*='logout']",
-        ):
-            for node in region.select(selector):
-                node.decompose()
+        strip_chrome(region)
 
         page_title_node = region.select_one("h1, h2") or soup.select_one("title")
-        page_title = normalized_text(page_title_node) if page_title_node else seed.title
+        page_title = visible_text(page_title_node) if page_title_node else seed.title
         markdown = html_to_markdown(str(region), heading_style="ATX").strip()
         digest = hashlib.sha256(body).hexdigest()
         filename = sanitize_filename(seed.title or page_title)
@@ -475,35 +819,13 @@ class CourseCrawler:
             encoding="utf-8",
         )
 
-        discovered: list[LinkSeed] = []
-        for link in region.select("a[href]"):
-            href = link.get("href")
-            if not href:
-                continue
-            target = canonical_url(urljoin(url, href))
-            link_title = normalized_text(link) or Path(urlparse(target).path).name or target
-            if not is_lms_url(target):
-                self.records.append(
-                    Record(
-                        kind="external",
-                        url=target,
-                        title=link_title,
-                        section=seed.section,
-                        item_type=seed.item_type,
-                        relation="linked-from-page",
-                        note=f"Found on {url}",
-                    )
-                )
-            elif looks_like_file_url(target) or should_follow_html(target):
-                discovered.append(
-                    LinkSeed(
-                        url=target,
-                        title=link_title,
-                        section=seed.section,
-                        item_type=seed.item_type,
-                        relation="linked-from-page",
-                    )
-                )
+        discovered = discover_links(
+            html,
+            url,
+            section=seed.section,
+            item_type=seed.item_type,
+            relation="linked-from-page",
+        )
 
         return (
             Record(
@@ -563,10 +885,41 @@ class CourseCrawler:
                 "course_url": self.course_url,
                 "scraped_at": utc_now_iso(),
                 "record_count": len(self.records),
+                "html_followed": self.html_followed,
+                "max_pages": self.max_pages,
+                "cap_hit": self.cap_hit,
             }
             fh.write(json.dumps(meta, ensure_ascii=False) + "\n")
             for record in self.records:
                 fh.write(json.dumps(asdict(record), ensure_ascii=False) + "\n")
+
+    def _write_audit(
+        self, course_title: str, activities: list[CourseActivity]
+    ) -> None:
+        counts: dict[str, int] = {}
+        for event in self.audit_events:
+            counts[event.decision] = counts.get(event.decision, 0) + 1
+        module_types = sorted({item.item_type for item in activities if item.item_type})
+        error_count = sum(1 for record in self.records if record.kind == "error")
+        payload = {
+            "course_id": self.course_id,
+            "course_title": course_title,
+            "course_url": self.course_url,
+            "scraped_at": utc_now_iso(),
+            "max_pages": self.max_pages,
+            "html_followed": self.html_followed,
+            "cap_hit": self.cap_hit,
+            "error_count": error_count,
+            "complete": (not self.cap_hit) and error_count == 0,
+            "module_types": module_types,
+            "activity_count": len(activities),
+            "counts": counts,
+            "events": [asdict(event) for event in self.audit_events],
+        }
+        (self.output_dir / "audit.json").write_text(
+            json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
 
     def _write_index(
         self, course_title: str, activities: list[CourseActivity]
@@ -612,9 +965,10 @@ class CourseCrawler:
                 "## Files",
                 "",
                 "- Machine-readable crawl map: [manifest.jsonl](manifest.jsonl)",
+                "- Completeness audit: [audit.json](audit.json)",
                 "- Original course landing page: [raw/course.html](raw/course.html)",
                 "",
-                "Interactive quiz attempts, submissions, and forum discussions are not mirrored by v0.",
+                "Interactive quiz attempts, submissions, forum discussions, and other stateful Moodle actions are excluded with reasons in audit.json.",
                 "",
             ]
         )
